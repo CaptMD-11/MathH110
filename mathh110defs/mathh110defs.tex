@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+% \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{changepage}
+\usepackage{lipsum}
+\usepackage{tree-dvips}
+\usepackage{qtree}
+\usepackage[linguistics]{forest}
+\usepackage[hidelinks]{hyperref}
+\usepackage{mathtools}
+\usepackage{blindtext}
+% \usepackage[cal=esstix,frak=euler,scr=boondox,bb= pazo]{mathalfa}
+% the following 2 packages are used for changing the font. 
+\usepackage{mathptmx}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{setspace}
+\graphicspath{{./images/}}
+\allowdisplaybreaks
+\allowbreak
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
+\theoremstyle{named}
+\newtheorem*{namedconjecture}{Distinct Factorizations Conjecture}
+\newtheorem{conjecture}{Conjecture}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\curl}{curl}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\nul}{nul}
+\DeclareMathOperator{\End}{End}
+\newcounter{customDef}
+\renewcommand{\thecustomDef}{\arabic{customDef}}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\begin{document}
+
+\begin{center}
+    Math H110 Definitions. 
+\end{center}
+
+\begin{enumerate}
+    \item \textbf{Endomorphism. } An endomorphism is a group homomorphism from a set to itself (NOTE: does not have to be invertible.)
+    \item \textbf{End V. } The symbol $\End V$ is the set of all endomorphisms on $V$ (and multiplication on $\End V$ is defined to be function composition). 
+    \item \textbf{F-Module. } An $F-$module is a generalization of vector spaces over rings. 
+    \item \textbf{Subspace. } Let $V$ be a vector space. $X$ is a subspace of $V$ if $X \subseteq V$ and closed under all relevant operations of $V$, $X \neq \emptyset$, and $X \ni 0$. 
+    \item \textbf{Linear Map / Linear Transformation. } Let $V$ be a vector space over a field $F$ with $v,w \in V$. Let $T$ be a map on $V$ with $T(v+w) = T(v) + T(w)$ and $T(\lambda v) = \lambda T(v)$ for all $\lambda \in F$. Then, $T$ is called a linear map or linear transformation. 
+    \item \textbf{Linear Operator. } If $T$ is linear transformation on a vector spaces $V$ with $T: V \to V$, then $T$ is linear operator on $V$. 
+\end{enumerate}
+
+\end{document}

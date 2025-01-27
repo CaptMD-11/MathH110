@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+% \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{changepage}
+\usepackage{lipsum}
+\usepackage{tree-dvips}
+\usepackage{qtree}
+\usepackage[linguistics]{forest}
+\usepackage[hidelinks]{hyperref}
+\usepackage{mathtools}
+\usepackage{blindtext}
+% \usepackage[cal=esstix,frak=euler,scr=boondox,bb= pazo]{mathalfa}
+% the following 2 packages are used for changing the font. 
+\usepackage{mathptmx}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{setspace}
+\graphicspath{{./images/}}
+\allowdisplaybreaks
+\allowbreak
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
+\theoremstyle{named}
+\newtheorem*{namedconjecture}{Distinct Factorizations Conjecture}
+\newtheorem{conjecture}{Conjecture}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\curl}{curl}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\nul}{nul}
+\newcounter{customDef}
+\renewcommand{\thecustomDef}{\arabic{customDef}}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\begin{document}
+
+\begin{center}
+    Math H110 Theorems. 
+\end{center}
+
+\begin{enumerate}
+    \item \textbf{Lemma. } Let $F$ be a field, $\lambda \in F$, $V$ a vector space over $F$ (denoted by $V/F$), $v \in V$. Then, if $\lambda v = 0$, then $\lambda=0$ or $v=0$. 
+    \item \textbf{Lemma. } A vector space over a field is a module over a field. 
+    \item \textbf{Theorem. } The intersection of a family of subspaces of a vector space $V$ is a subspace of $V$. 
+    \item \textbf{Lemma. } Let $S=\{v_1,\dots,v_t\}$. Then the subspace of all linear combinations of the elements of $S$ is the $\mathrm{span}S$. 
+    \item \textbf{Theorem. } Let $L=v_1,\dots,v_n$ be a list of vectors in a vector space $V$ over a field $F$ and let $T: F^n: \to V$ be linear transformation with $(\lambda_1,\dots,\lambda_n) \mapsto \lambda_1v_1 + \dots + \lambda_nv_n$. Then, we have the following: 
+    \begin{enumerate}
+        \item $L$ spans $V$ iff $T$ is onto. 
+        \item $L$ is linearly independent iff $T$ is 1-1 iff $\nul T = \{0\}$. 
+        \item $L$ is a basis iff $T$ is 1-1 and onto. 
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
