@@ -54,7 +54,14 @@
     \item \textbf{F-Module. } An $F-$module is a generalization of vector spaces over rings. 
     \item \textbf{Subspace. } Let $V$ be a vector space. $X$ is a subspace of $V$ if $X \subseteq V$ and closed under all relevant operations of $V$, $X \neq \emptyset$, and $X \ni 0$. 
     \item \textbf{Linear Map / Linear Transformation. } Let $V$ be a vector space over a field $F$ with $v,w \in V$. Let $T$ be a map on $V$ with $T(v+w) = T(v) + T(w)$ and $T(\lambda v) = \lambda T(v)$ for all $\lambda \in F$. Then, $T$ is called a linear map or linear transformation. 
-    \item \textbf{Linear Operator. } If $T$ is linear transformation on a vector spaces $V$ with $T: V \to V$, then $T$ is linear operator on $V$. 
+    \item \textbf{Linear Operator. } If $T$ is a linear transformation on a vector spaces $V$ with $T: V \to V$, then $T$ is linear operator on $V$. 
+    \item \textbf{Spans. } The list $v_1,\dots,v_n$ spans $V$ iff $T: F^n \to V$ is onto. 
+    \item \textbf{Linearly Independent. } The list $v_1,\dots,v_n$ is linearly independent iff $T: F^n \to V$ is 1-1. Equivalently, the list $v_1,\dots,v_n$ is linearly independent if $\lambda_1v_1 + \dots + \lambda_nv_n = 0$ implies $\lambda_i=0$ for all $i$. 
+    \item \textbf{Linearly Dependent. } The list $v_1,\dots,v_n$ is linearly dependent iff $\lambda_1v_1 + \dots + \lambda_nv_n = 0$ implies $\lambda_i \neq 0$ for some $i$. 
+    \item \textbf{Basis. } The list $v_1,\dots,v_n$ is a basis of $V$ if $\textrm{span}\{v_1,\dots,v_n\} = V$ and $v_1,\dots,v_n$ is linearly independent. 
+    \item \textbf{Finite-dimensional. } $V$ is finite-dimensional if $V$ is spanned by a finite list of vectors. 
+    \item \textbf{Sum of Subspaces. } Let $X_1,\dots,X_t$ be subspaces of $V$. Then, we define their sum as $X_1 + \dots + X_t = \{x_1 + \dots + x_t \mid x_1 \in X_1, \dots, x_t \in X_t\}$. 
+    \item \textbf{Direct Sum of Subspaces. } Let $X_1,\dots,X_t$ be subspaces of $V$. Then, their direct sum, $X_1 \oplus \dots \oplus X_t$, is given by a 1-1 linear map $T$, with $T: X_1\times \dots \times X_t \to V$. 
 \end{enumerate}
 
 \end{document}

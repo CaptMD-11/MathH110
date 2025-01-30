@@ -1345,6 +1345,8 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -1360,6 +1362,14 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/psyro.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT mathh110defs.aux
 INPUT ./mathh110defs.out
 INPUT ./mathh110defs.out

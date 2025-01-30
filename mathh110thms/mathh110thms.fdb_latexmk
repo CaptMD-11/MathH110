@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1738021227 "/Users/nydhruva/git/LaTeX/MathH110/mathh110thms/mathh110thms.tex" "mathh110thms.pdf" "mathh110thms" 1738021228 0
-  "/Users/nydhruva/git/LaTeX/MathH110/mathh110thms/mathh110thms.tex" 1738021227 2502 218924298b5a08742c61fc3a7d758d12 ""
+["pdflatex"] 1738196635 "/Users/nydhruva/git/LaTeX/MathH110/mathh110thms/mathh110thms.tex" "mathh110thms.pdf" "mathh110thms" 1738196636 0
+  "/Users/nydhruva/git/LaTeX/MathH110/mathh110thms/mathh110thms.tex" 1738196635 2823 fa5e8bbd6c0c2095604f0351143d036f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -264,9 +264,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693530960 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693530901 7883453 e715a5447c98d5844e9e25d55e00422f ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "mathh110thms.aux" 1738021228 554 e6f85c6f44bbe194532b4fa1fd8ca02c "pdflatex"
-  "mathh110thms.out" 1738021228 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "mathh110thms.tex" 1738021227 2502 218924298b5a08742c61fc3a7d758d12 ""
+  "mathh110thms.aux" 1738196636 554 e6f85c6f44bbe194532b4fa1fd8ca02c "pdflatex"
+  "mathh110thms.out" 1738196636 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "mathh110thms.tex" 1738196635 2823 fa5e8bbd6c0c2095604f0351143d036f ""
   (generated)
   "mathh110thms.aux"
   "mathh110thms.log"
