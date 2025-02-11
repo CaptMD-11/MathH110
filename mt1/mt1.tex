@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+% \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{changepage}
+\usepackage{lipsum}
+\usepackage{tree-dvips}
+\usepackage{qtree}
+\usepackage[linguistics]{forest}
+\usepackage[hidelinks]{hyperref}
+\usepackage{mathtools}
+\usepackage{blindtext}
+% \usepackage[cal=esstix,frak=euler,scr=boondox,bb= pazo]{mathalfa}
+% the following 2 packages are used for changing the font. 
+\usepackage{mathptmx}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{setspace}
+\graphicspath{{./images/}}
+\allowdisplaybreaks
+\allowbreak
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
+\theoremstyle{named}
+\newtheorem*{namedconjecture}{Distinct Factorizations Conjecture}
+\newtheorem{conjecture}{Conjecture}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\curl}{curl}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\nul}{nul}
+\newcounter{customDef}
+\renewcommand{\thecustomDef}{\arabic{customDef}}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\begin{document}
+
+\begin{center}
+    Math H110 Midterm 1 CheatSheet 
+\end{center}
+1A. (n/a)
+
+1B. 
+\begin{enumerate}
+	\item \textbf{Vector Space. } A vector space $V$ is a set that has scalar multiplication and vector addition defined on it with the following properties: 
+	\begin{enumerate}
+		\item Additive commutativity. 
+		\item Additive associativity of vectors ($u+(v+w)=(u+v)+w$) and multiplicative associativity for scalars ($(ab)v = a(bv)$). 
+		\item Additive identity. 
+		\item Additive inverses. 
+		\item Multiplicative identity. 
+		\item BOTH distributive properties. 
+	\end{enumerate}
+	\item \textbf{V-space (unique additive identity) } A vector space has a unique additive identity. 
+	\item \textbf{V-space (unique additive inverses) } Every element in a vector space has a unique additive inverse. 
+\end{enumerate}
+ 
+1C. 
+\begin{enumerate}
+	\item \textbf{Subspace. } A subset $U \subseteq V$ is a subspace of $V$ if it is a vector space with the same additive identity, scalar multiplication, and vector addition as defined on $V$. 
+	\item \textbf{Conditions for a Subspace. } A subset $U \subseteq V$ is a subspace of $V$ iff $U$ is closed under vector addition, scalar multiplication, and contains the "zero" element as in $V$. 
+	\item \textbf{Sums of Subspaces. } Let $V_1,\dots,V_n$ be subspaces of $V$. Then, we have the sum of subspaces as $V_1 + \dots + V_n = \{v_1 + \dots + v_n \mid v_i \in V_i \textrm{ for all } i\}$. 
+	\item \textbf{Smallest subspace containing each subspace} Suppose $V_1,\dots,V_n$ are subspaces of $V$. Then, $V_1 + \dots + V_n$ is the smallest subspace of $V$ containing $V_1,\dots,V_n$. 
+	\item \textbf{Direct Sum. } Suppose $V_1,\dots,V_m$ are subspaces of $V$. Then: 
+	\begin{enumerate}
+		\item The sum $V_1 + \dots + V_m$ is direct if each element of $V_1 + \dots + V_m$ can be written uniquely as a sum $v_1 + \dots + v_m$, where $v_i \in V_i$ for all $i$. 
+		\item If $V_1 + \dots + V_m$ is a direct sum, then we write $V_1 \oplus \dots \oplus V_m$. 
+	\end{enumerate}
+	\item \textbf{Conditions for a direct sum. } Suppose $V_1,\dots,V_n$ are subspaces of $V$. Then, $V_1 + \dots + V_n$ is direct iff the only way to write 0 from $v_1 + \dots + v_n$ is by taking $v_i=0$ for all $i$. 
+	\item \textbf{Direct sum of subspaces. } If $U,W$ are subspaces of $V$, then $U + W$ is direct iff $U \cap W = \{0\}$. 
+	
+\end{enumerate}
+
+\end{document}
+
