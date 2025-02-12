@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.31)  11 FEB 2025 14:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.31)  11 FEB 2025 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,13 +1350,20 @@ Overfull \hbox (8.38252pt too wide) in paragraph at lines 108--109
 12 Sup-pose $\OML/ztmcm/m/it/12 V$ \OT1/ptm/m/n/12 is finite-dimensional.
  []
 
-[3] (./mt1.aux)
+[3] [4]
+Overfull \hbox (5.33907pt too wide) in paragraph at lines 142--143
+\OT1/ptm/m/n/12 are finite-dimensional vec-tor spaces. Then, $\OML/ztmcm/m/it/1
+2 V[] \OMS/ztmcm/m/n/12 ^^B [] ^^B \OML/ztmcm/m/it/12 V[]$ \OT1/ptm/m/n/12 is f
+inite-dimensional
+ []
+
+[5] [6] (./mt1.aux)
 Package rerunfilecheck Info: File `mt1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36737 strings out of 476025
- 833819 string characters out of 5790017
+ 36766 strings out of 476025
+ 834019 string characters out of 5790017
  1865388 words of memory out of 5000000
  56463 multiletter control sequences out of 15000+600000
  532721 words of font info for 78 fonts, out of 8000000 for 9000
@@ -1365,14 +1372,17 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/t
-exlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/202
-3/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-di
-st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on mt1.pdf (3 pages, 76424 bytes).
+usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/
+local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texli
+ve/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on mt1.pdf (6 pages, 95495 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 42 named destinations out of 1000 (max. 500000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 71 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -111,7 +111,49 @@
 
 3A. 
 \begin{enumerate}
-	\item 
+	\item \textbf{Set of Linear Maps. } The linear of linear maps from $V \to W$ is written $\mathscr{L}(V,W)$ and the set of linear maps from $V \to V$ is written $\mathscr{L}(V)$. 
+	\item \textbf{Linear Map lemma. } Suppose $v_1,\dots,v_n$ is a basis of $V$ and $w_1,\dots,w_n \in W$. Then, there exists a unique linear map $T: V \to W$ such that $Tv_k = w_k$ for each $k$. 
+	\item \textbf{Linear maps take 0 to 0. } Suppose $T: V \to W$ is a linear map. Then, $T(0)=0$. 
+\end{enumerate}
+
+3B. 
+\begin{enumerate}
+	\item \textbf{null space is a subspace. } Suppose $T \in \mathscr{L}(V,W)$. Then, $\null T$ is a subspace of $V$. 
+	\item \textbf{injectivity iff null is 0. } Let $T \in \mathscr{L}(V,W)$. Then, $T$ is 1-1 iff $\null T = \{0\}$. 
+	\item \textbf{range is a subspace. } If $T \in \mathscr{L}(V,W)$, then range $T$ is a subspace of $W$. 
+	\item \textbf{Fundamental Theorem of Linear Maps. } Suppose $V$ is finite-dimensional and $T \in \mathscr{L}(V,W)$. Then, range $T$ is finite dimensional and $\dim V = \dim \null T + \dim \textrm{range} T$. 
+	\item \textbf{linear map to a lower-dim space is not 1-1. } Suppose $V,W$ are finite-dimensional vector spaces such that $\dim V > \dim W$. Then, no linear map from $V \to W$ is 1-1. 
+	\item \textbf{linear map to a higher-dim space is not onto. } Suppose $V,W$ are finite-dimensional vector spaces such that $\dim V < \dim W$. Then, no linear map from $V \to W$ is onto. 
+\end{enumerate}
+
+3C. n/a. 
+
+3D. 
+\begin{enumerate}
+	\item \textbf{Theorem. } Let $V,W$ be finite-dimensional vector spaces such that $\dim V = \dim W$ and let $T \in \mathscr{L}(V,W)$. Then, $T$ is invertible iff $T$ is 1-1 iff $T$ is onto. 
+	\item \textbf{isomorphism. } An isomorphism is an invertible linear map. 
+	\item \textbf{dimension and isomorphic. } Two finite-dimensional vector spaces are isomorphic iff they have the same dimension. 
+	\item \textbf{Theorem. } Suppose $V$ and $W$ are finite-dimensional. Then, $\mathscr{L}(V,W)$ is finite-dimensional and $\dim \mathscr{L}(V,W) = (\dim V)(\dim W)$. 
+\end{enumerate}
+
+3E. 
+\begin{enumerate}
+	\item \textbf{Product of vector spaces is a vector space. } Suppose $V_1,\dots,V_m$ are vector spaces over $\mathbb{F}$. Then, $V_1 \times \dots \times V_m$ is a vector space over $\mathbb{F}$. 
+	\item \textbf{dimension of a product is the sum of the dimensions. } Suppose $V_1,\dots,V_m$ are finite-dimensional vector spaces. Then, $V_1 \times \dots \times V_m$ is finite-dimensional and $\dim(V_1 \times \dots \times V_m) = \dim V_1 + \dots + \dim V_m$. 
+	\item \textbf{Products and direct sums. } Suppose $V_1,\dots,V_m$ are subspaces of $V$. Define a linear map $\Gamma: (V_1 \times \dots \times V_m) \to (V_1 + \dots + V_m)$ by $\Gamma(v_1,\dots,v_m) = v_1 + \dots + v_m$. Then, $V_1 + \dots + V_m$ is direct iff $\Gamma$ is 1-1. 
+	\item \textbf{direct sum iff dimensions add up. } Suppose $V$ is finite-dimensional and $V_1,\dots,V_m$ are subspaces of $V$. Then, $V_1 + \dots + V_m$ is direct iff $\dim(V_1 + \dots + V_m) = \dim V_1 + \dots + \dim V_m$. 
+	\item \textbf{v + U. } Suppose $v \in V$ and $U \subseteq V$. Then, $v + U = \{v + u \mid u \in U\}$. 
+	\item \textbf{Translate. } For $v \in V$ and $U \subseteq V$, the set $v + U$ is called a translate of $U$. 
+	\item \textbf{Quotient Space. } Let $U$ be a subspace of $V$. Then, the quotient space $V/U$ is the set of all translates of $U$, that is, $V/U = \{v + U \mid v \in V\}$. 
+	\item \textbf{two translates of a subspace are either equal or disjoint. } Suppose $U$ is a subspace of $V$ and $v,w \in V$. Then, $v-w \in U$ iff $v + U = w + U$ iff $(v + U) \cap (w+U) \neq \emptyset$. 
+	\item \textbf{Addition and scalar multiplication on Quotient space. } Let $U$ be a subspace of $V$. Then, we have (for all $v,w \in V$, $\lambda \in F$): 
+	\begin{enumerate}
+		\item addition on $V/U$: $(v + U) + (w + U) = (v+w) + U$. 
+		\item scalar multiplication on $V/U$: $\lambda(v + U) = (\lambda v) + U$. 
+	\end{enumerate}
+	\item \textbf{quotient space is a vector space. } Let $U$ be a subspace of $V$. Then, the quotient space $V/U$ is a subspace of $V$ under the defined scalar multiplication and vector addition. 
+	\item \textbf{quotient map. } Let $U$ be a subspace of $V$. Then, the quotient map $\pi: V \to V/U$ is the linear map defined by $\pi(v) = v + U$ for each $v \in V$. 
+	\item \textbf{dimension of quotient space. } Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then, $\dim (V/U) = \dim V - \dim U$. 
 \end{enumerate}
 
 \end{document}
