@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-% \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage[left=0.5cm, right=0.5cm, top=0.5cm, bottom=0.5cm]{geometry}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amsfonts}
@@ -21,6 +21,7 @@
 \usepackage{mathrsfs}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage{multicol}
 \graphicspath{{./images/}}
 \allowdisplaybreaks
 \allowbreak
@@ -38,19 +39,22 @@
 \DeclareMathOperator{\Aut}{Aut}
 \DeclareMathOperator{\id}{id}
 \DeclareMathOperator{\nul}{nul}
+\DeclareMathOperator{\End}{End}
 \newcounter{customDef}
 \renewcommand{\thecustomDef}{\arabic{customDef}}
 \newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+
+% the following line is for the omission of the title
+\pagestyle{empty}
 \begin{document}
 
-\begin{center}
-    Math H110 Midterm 1 CheatSheet 
-\end{center}
-AXLER MATERIAL \\
-1A. (n/a)
+{\tiny 
+\begin{multicols}{2}
+\begin{spacing}{1.01}
 
-1B. 
 \begin{enumerate}
+	\item 1A. (NOTHING)
+	\item 1B. 
 	\item \textbf{Vector Space. } A vector space $V$ is a set that has scalar multiplication and vector addition defined on it with the following properties: 
 	\begin{enumerate}
 		\item Additive commutativity. 
@@ -62,10 +66,7 @@ AXLER MATERIAL \\
 	\end{enumerate}
 	\item \textbf{V-space (unique additive identity) } A vector space has a unique additive identity. 
 	\item \textbf{V-space (unique additive inverses) } Every element in a vector space has a unique additive inverse. 
-\end{enumerate}
- 
-1C. 
-\begin{enumerate}
+	\item 1C. 
 	\item \textbf{Subspace. } A subset $U \subseteq V$ is a subspace of $V$ if it is a vector space with the same additive identity, scalar multiplication, and vector addition as defined on $V$. 
 	\item \textbf{Conditions for a Subspace. } A subset $U \subseteq V$ is a subspace of $V$ iff $U$ is closed under vector addition, scalar multiplication, and contains the "zero" element as in $V$. 
 	\item \textbf{Sums of Subspaces. } Let $V_1,\dots,V_n$ be subspaces of $V$. Then, we have the sum of subspaces as $V_1 + \dots + V_n = \{v_1 + \dots + v_n \mid v_i \in V_i \textrm{ for all } i\}$. 
@@ -77,10 +78,7 @@ AXLER MATERIAL \\
 	\end{enumerate}
 	\item \textbf{Conditions for a direct sum. } Suppose $V_1,\dots,V_n$ are subspaces of $V$. Then, $V_1 + \dots + V_n$ is direct iff the only way to write 0 from $v_1 + \dots + v_n$ is by taking $v_i=0$ for all $i$. 
 	\item \textbf{Direct sum of subspaces. } If $U,W$ are subspaces of $V$, then $U + W$ is direct iff $U \cap W = \{0\}$. 	
-\end{enumerate}
-
-2A. 
-\begin{enumerate}
+	\item 2A. 
 	\item \textbf{Span is the smallest containing subspace. } The span of a list of vectors in $V$ is the smallest subspace containing all of the vectors in the list. 
 	\item \textbf{Zero polynomial. } The zero polynomial is said to have degree $-\infty$. 
 	\item \textbf{Linear Independence. } A list of vectors $v_1,\dots,v_n \in V$ is said to be linearly independent if $a_1v_1 + \dots + a_nv_n = 0$ implies $a_i=0$ for all $i$. Also, the empty list $()$ is said to be linearly independent. 
@@ -88,57 +86,41 @@ AXLER MATERIAL \\
 	\item \textbf{Linear Dependence Lemma. } Suppose $v_1,\dots,v_m$ is a linearly dependent list in $V$. Then, there exists $k \in \{1,\dots,m\}$ such that $v_k \in \textrm{span}(v_1,\dots,v_{k-1})$. Furthermore, if $k$ satisfies the condition in the previous sentence and the $k^{th}$ term is removed from $v_1,\dots,v_m$, then the span of the remaining list equals $\textrm{span}(v_1,\dots,v_m)$. 
 	\item \textbf{length of linearly independent list < length of spanning list. } In a finite-dimensional vector space, the length of every linearly independent list is at most the length of every spanning list of vectors. 
 	\item \textbf{Finite Dimensional subspaces. } Every subspace of a finite-dimensional vector space is finite dimensional. 
-\end{enumerate}
-
-2B. 
-\begin{enumerate}
+	\item 2B. 
 	\item \textbf{Basis. } A basis of $V$ is a list of vectors that is linearly independent and spans $V$. 
 	\item \textbf{Criterion for basis. } A list of vectors $v_1,\dots,v_n \in V$ is a basis of $V$ iff every $v \in V$ can be written uniquely in the form $v=a_1v_1 + \dots + a_nv_n$, where $a_i \in F$ for all $i$. 
 	\item \textbf{Every spanning list contains a basis. } Every spanning list in a vector space can be reduced to a basis of the vector space. 
 	\item \textbf{Basis of finite-dimensional vector space. } Every finite-dimensional vector space has a basis. 
 	\item \textbf{Every linearly independent list extends to a basis. } Every linearly independent list in a finite-dimensional vector space can be extended to a basis of the vector space. 
 	\item \textbf{Every subspace of $V$ is part of a direct sum equal to $V$. } Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then, there is a subspace $W$ of $V$ such that $V = U \oplus W$. 
-\end{enumerate}
-
-2C. 
-\begin{enumerate}
+	\item 2C. 
 	\item \textbf{Basis length does not depend on basis. } Any two bases of a finite-dimensional vector space have the same length. 
 	\item \textbf{Dimension of a subspace. } If $V$ is finite-dimensional and $U$ is a subspace of $V$, then $\dim U \leq \dim V$. 
 	\item \textbf{Linearly independent list of the right length is a basis. } Suppose $V$ is finite-dimensional. Then, every linearly independent list of vectors in $V$ (with list length equal to $\dim V$) is a basis of $V$. 
 	\item \textbf{Subspace of full dimension equals the whole space. } Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$ such that $\dim U = \dim V$. Then, $U = V$. 
 	\item \textbf{Spanning list of the right length is a basis. } Suppose $V$ is finite-dimensional. Then, every spanning list of $V$ of length $\dim V$ is a basis of $V$. 
 	\item \textbf{Dimension of a sum. } If $V_1,V_2$ are subspaces of a finite-dimensional vector space, then $\dim (V_1+V_2) = \dim V_1 + \dim V_2 - \dim (V_1 \cap V_2)$. 
-\end{enumerate}
-
-3A. 
-\begin{enumerate}
+	\item 3A. 
 	\item \textbf{Set of Linear Maps. } The linear of linear maps from $V \to W$ is written $\mathscr{L}(V,W)$ and the set of linear maps from $V \to V$ is written $\mathscr{L}(V)$. 
 	\item \textbf{Linear Map lemma. } Suppose $v_1,\dots,v_n$ is a basis of $V$ and $w_1,\dots,w_n \in W$. Then, there exists a unique linear map $T: V \to W$ such that $Tv_k = w_k$ for each $k$. 
 	\item \textbf{Linear maps take 0 to 0. } Suppose $T: V \to W$ is a linear map. Then, $T(0)=0$. 
-\end{enumerate}
-
-3B. 
-\begin{enumerate}
+	\item 3B. 
 	\item \textbf{null space is a subspace. } Suppose $T \in \mathscr{L}(V,W)$. Then, $\null T$ is a subspace of $V$. 
 	\item \textbf{injectivity iff null is 0. } Let $T \in \mathscr{L}(V,W)$. Then, $T$ is 1-1 iff $\null T = \{0\}$. 
 	\item \textbf{range is a subspace. } If $T \in \mathscr{L}(V,W)$, then range $T$ is a subspace of $W$. 
 	\item \textbf{Fundamental Theorem of Linear Maps. } Suppose $V$ is finite-dimensional and $T \in \mathscr{L}(V,W)$. Then, range $T$ is finite dimensional and $\dim V = \dim \nul T + \dim \textrm{range} T$. 
 	\item \textbf{linear map to a lower-dim space is not 1-1. } Suppose $V,W$ are finite-dimensional vector spaces such that $\dim V > \dim W$. Then, no linear map from $V \to W$ is 1-1. 
 	\item \textbf{linear map to a higher-dim space is not onto. } Suppose $V,W$ are finite-dimensional vector spaces such that $\dim V < \dim W$. Then, no linear map from $V \to W$ is onto. 
-\end{enumerate}
-
-3C. n/a. 
-
-3D. 
-\begin{enumerate}
+	\item 3C. (NOTHING)
+	\item 3D. 
 	\item \textbf{Theorem. } Let $V,W$ be finite-dimensional vector spaces such that $\dim V = \dim W$ and let $T \in \mathscr{L}(V,W)$. Then, $T$ is invertible iff $T$ is 1-1 iff $T$ is onto. 
 	\item \textbf{isomorphism. } An isomorphism is an invertible linear map. 
 	\item \textbf{dimension and isomorphic. } Two finite-dimensional vector spaces are isomorphic iff they have the same dimension. 
-	\item \textbf{Theorem. } Suppose $V$ and $W$ are finite-dimensional. Then, $\mathscr{L}(V,W)$ is finite-dimensional and $\dim \mathscr{L}(V,W) = (\dim V)(\dim W)$. 
-\end{enumerate}
-
-3E. 
-\begin{enumerate}
+	\item \textbf{Theorem. } Suppose $V$ and $W$ are finite-dimensional. Then, $\mathscr{L}(V,W)$ is finite-dimensional and $\dim \mathscr{L}(V,W) = (\dim V)(\dim W)$.
+	\item \textbf{matrix of identity operator with respect to two bases. } Suppose $u_1,\dots,u_n$ and $v_1,\dots,v_n$ are two bases of $V$. Then, the matrices $\mathscr{M}(I; u_1,\dots,u_n; v_1,\dots,v_n)$ and $\mathscr{M}(I; v_1,\dots,v_n; u_1,\dots,u_n)$ are invertible and are inverses of each other. 
+	\item \textbf{Change of basis formula. } Let $T \in \mathscr{L}(V,W)$. Suppose $u_1,\dots,u_n$ and $v_1,\dots,v_n$ are two bases of $V$. Let $A = \mathscr{M}(T; u_1,\dots,u_n)$ and $B = \mathscr{M}(T; v_1,\dots,v_n)$ and $C = \mathscr{M}(I; u_1,\dots,u_n; v_1,\dots,v_n)$. Then, $A = C^{-1}BC$. 
+	\item Suppose that $v_1,\dots,v_n$ is a basis of $V$ and $T \in \mathscr{L}(V)$ is invertible. Then, $\mathscr{M}(T^{-1}) = (\mathscr{M}(T))^{-1}$, where both matrices are with respect to the basis $v_1,\dots,v_n$. 
+	\item 3E. 
 	\item \textbf{Product of vector spaces is a vector space. } Suppose $V_1,\dots,V_m$ are vector spaces over $\mathbb{F}$. Then, $V_1 \times \dots \times V_m$ is a vector space over $\mathbb{F}$. 
 	\item \textbf{dimension of a product is the sum of the dimensions. } Suppose $V_1,\dots,V_m$ are finite-dimensional vector spaces. Then, $V_1 \times \dots \times V_m$ is finite-dimensional and $\dim(V_1 \times \dots \times V_m) = \dim V_1 + \dots + \dim V_m$. 
 	\item \textbf{Products and direct sums. } Suppose $V_1,\dots,V_m$ are subspaces of $V$. Define a linear map $\Gamma: (V_1 \times \dots \times V_m) \to (V_1 + \dots + V_m)$ by $\Gamma(v_1,\dots,v_m) = v_1 + \dots + v_m$. Then, $V_1 + \dots + V_m$ is direct iff $\Gamma$ is 1-1. 
@@ -157,24 +139,72 @@ AXLER MATERIAL \\
 	\item \textbf{dimension of quotient space. } Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then, $\dim (V/U) = \dim V - \dim U$.
 	\item \textbf{Column rank. } The column rank (rank of the column span of a matrix) is $\textrm{rank}T_A$. 
 	\item \textbf{Theorem. } If $A$ is a rectangular matrix of elements in a field $F$, then row rank $A$ = column rank $A$.  
+	\item RIBET DEFS. 
+	\item \textbf{Endomorphism. } An endomorphism is a group homomorphism from a set to itself (NOTE: does not have to be invertible.)
+    \item \textbf{End V. } The symbol $\End V$ is the set of all endomorphisms on $V$ (and multiplication on $\End V$ is defined to be function composition). 
+    \item \textbf{F-Module. } An $F-$module is a generalization of vector spaces over rings. 
+    \item \textbf{Linear Map / Linear Transformation. } Let $V$ be a vector space over a field $F$ with $v,w \in V$. Let $T$ be a map on $V$ with $T(v+w) = T(v) + T(w)$ and $T(\lambda v) = \lambda T(v)$ for all $\lambda \in F$. Then, $T$ is called a linear map or linear transformation. 
+    \item \textbf{Linear Operator. } If $T$ is a linear transformation on a vector spaces $V$ with $T: V \to V$, then $T$ is linear operator on $V$. 
+    \item \textbf{Spans. } The list $v_1,\dots,v_n$ spans $V$ iff $T: F^n \to V$ is onto. 
+        \item \textbf{Finite-dimensional. } $V$ is finite-dimensional if $V$ is spanned by a finite list of vectors. 
+      \item \textbf{Direct Sum of Subspaces. } Let $X_1,\dots,X_t$ be subspaces of $V$. Then, their direct sum, $X_1 \oplus \dots \oplus X_t$, is given by a 1-1 linear map $T$, with $T: X_1\times \dots \times X_t \to V$.
+	\item \textbf{Complement of Subspace. } Let $X,Y$ be subspaces of of $V$. Then, $Y$ is a complementary subspace of $X$ iff $X+Y=V$ and $X+Y = X \oplus Y$. 
+	\item \textbf{Rank, Nullity. } The rank of a linear map is the dimension of the range of the linear map. The nullity is the dimension of the null space of the linear map. 
+	\item \textbf{Null Space. } The null space is the set of vectors that are mapped to $0$. 
+	\item \textbf{Isomorphic Vector Spaces. } Two vector spaces $V, W$ are isomorphic if there exists a linear map $T: V \to W$ that is 1-1 and onto. 
+	\item \textbf{Quotient Space. } Suppose $U$ is a subspace of $V$. Then, the quotient space $V / U$ is the set $V / U = \{v + U \mid v \in V\}$. 
+	\item \textbf{Column Rank. } The column rank (rank of the column span of a matrix) is defined to be $\textrm{rank}T_A$. 
+	\item \textbf{Conjugation. } Let $A$ be an $n \times n$ matrix (over $F$) and let $Q$ be an $n \times n$ matrix (over $F$). Then, the conjugation of $A$ by $Q$ is $Q^{-1}AQ$.
+	\item RIBET THMS. 
+	\item \textbf{Lemma. } Let $F$ be a field, $\lambda \in F$, $V$ a vector space over $F$ (denoted by $V/F$), $v \in V$. Then, if $\lambda v = 0$, then $\lambda=0$ or $v=0$. 
+    \item \textbf{Lemma. } A vector space over a field is a module over a field. 
+    \item \textbf{Theorem. } The intersection of a family of subspaces of a vector space $V$ is a subspace of $V$. 
+    \item \textbf{Lemma. } Let $S=\{v_1,\dots,v_t\}$. Then the subspace of all linear combinations of the elements of $S$ is the $\mathrm{span}S$. 
+    \item \textbf{Theorem. } Let $L=v_1,\dots,v_n$ be a list of vectors in a vector space $V$ over a field $F$ and let $T: F^n: \to V$ be linear transformation with $(\lambda_1,\dots,\lambda_n) \mapsto \lambda_1v_1 + \dots + \lambda_nv_n$. Then, we have the following: 
+    \begin{enumerate}
+        \item $L$ spans $V$ iff $T$ is onto. 
+        \item $L$ is linearly independent iff $T$ is 1-1 iff $\nul T = \{0\}$. 
+        \item $L$ is a basis iff $T$ is 1-1 and onto. 
+    \end{enumerate}
+    \item \textbf{Prop. } Consider $T: F^n \to V$ with $(\lambda_1,\dots,\lambda_n) \mapsto \lambda_1v_1 + \dots + \lambda_nv_n$, so $T(e_i)=v_i$ for all $i$. Then, $T$ is the unique linear map $F_n \to V$ that sends $e_i \mapsto v_i$ for all $i$. 
+    \item \textbf{Theorem. } Every subspace $X$ of $V$ has complement. 
+	\item \textbf{Lemma. } If $v_1,\dots,v_t$ is linearly dependent list, then there is an index $k$ such that $v_k \in \textrm{span}(v_1,\dots,v_{k-1},v_{k+1},\dots,v_t)$. Furthermore, the span of the list of length $t-1$ gotten by removing $v_k$ from the list is the same as the span of the original list. 
+	\item \textbf{Prop. } In a finite-dimensional vector space, the length is of every linearly independent list of vectors is less than or equal to the length of every spanning list of vectors. 
+	\item \textbf{Cor. } Two bases of $V$ have the same number of elements. 
+	\item \textbf{Prop. } $X+Y$ is direct iff the null space of the sum map is $\{0\}$. 
+	\item \textbf{Theorem. } Every subspace of a finite-dimensional vector space is finite-dimensional. 
+	\item \textbf{Prop. } Every spanning list for a vector space can be pruned down to a basis of the space. 
+	\item \textbf{Cor. } Every finite-dimensional vector space has a basis. 
+	\item \textbf{Prop. } In a finite-dimensional vector space, every linearly independent list can be extended to a basis of the space. 
+	\item \textbf{Major Theorem. } Every subspace of a finite-dimensional vector space has a complement. 
+	\item \textbf{Prop. } Let $X,Y$ be subspaces of a finite-dimensional vector space $V$. Then: 
+	\begin{enumerate}
+		\item $\dim X + \dim Y = \dim V$. 
+		\item $X \cap Y = \{0\}$. 
+	\end{enumerate}
+	Then, $V=X \oplus Y$. 
+	\item \textbf{Prop. } $\dim(X \oplus Y) = \dim X + \dim Y$. 
+	\item \textbf{Prop. } If $V$ is a finite-dimensional vector space (with $\dim V = n$), then every subspace has dimension at most $n$. 
+	\item \textbf{Prop. } Let $\dim V = n$. Then, a linearly independent list of vectors of $V$ with length $n$ is a basis for $V$. 
+	\item \textbf{Prop. } Let $\dim V = n$. Then, every spanning list for $V$ of length $n$ is a basis for $V$.
+	\item \textbf{Lemma. } The list $(x_1,0),\dots,(x_t,0);(0,y_1),\dots,(0,y_k)$ of length $t+k$ is a basis of $X \times Y$. 
+	\item \textbf{Cor. } $\dim (X \times Y) = \dim X + \dim Y$. 
+	\item \textbf{Cor. } Let $T: V \to W$ be a linear map with $\dim V = d$. Then, $\textrm{rank}T \leq d$. 
+	\item \textbf{Rank-Nullity Theorem. } $\dim V = \textrm{rank}V + \textrm{nullity}V$. 
+	\item \textbf{Prop. } If $T: V \to W$ is 1-1, then $\textrm{nullity}T = 0$. 
+	\item \textbf{Cor. } If $T: V \to W$ is 1-1 and onto, then $\dim V = \dim W$. 
+	\item \textbf{Theorem. } The set of linear maps $V \to W$ is a vector space $L \cdot (F^n,W) \to T \longrightarrow (Te_1,\dots,Te_n) \in W^n$. 
+	\item \textbf{Theorem. } $\dim (X+Y) = \dim X + \dim Y - \dim (X \cap Y)$. 
+	\item \textbf{Cor. } $\dim (V/X) = \dim V - \dim X$. 
+	\item \textbf{Theorem. } If $A$ is a rectangular matrix with elements in a field $F$, then row rank $A$ = column rank $A$. 
+	\item \textbf{Prop. } Let $T: V \to W$ be 1-1. Then, $\dim W \geq \dim V$. 
+	\item \textbf{Prop. } Let $T: V \to W$ be onto. Then, $\dim V \geq \dim W$. 
+	\item \textbf{Prop. } Let $T: V \to W$ and $\dim V = \dim W$. Then, $T$ 1-1 iff $T$ onto iff $T$ bijective iff $T$ invertible. 
 \end{enumerate}
 
-\begin{center}
-	\hrule
-\end{center}
+\end{spacing}
+\end{multicols}
 
-RIBET DEFS (add below Wednesday's material in enum list) (remove duplicates)
-
-\begin{center}
-	\hrule
-\end{center}
-
-RIBET THMS (add below Wednesday's material in enum list) (remove duplicates) 
-
-\begin{center}
-	\hrule
-\end{center}
-
+}
 
 \end{document}
-
