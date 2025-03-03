@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.31)  2 MAR 2025 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.31)  3 MAR 2025 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1351,8 +1351,8 @@ Package rerunfilecheck Info: File `mathh110thms.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36752 strings out of 476025
- 834076 string characters out of 5790017
+ 36756 strings out of 476025
+ 834104 string characters out of 5790017
  1867388 words of memory out of 5000000
  56463 multiletter control sequences out of 15000+600000
  532721 words of font info for 78 fonts, out of 8000000 for 9000
@@ -1361,15 +1361,16 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2
-023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-
-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on mathh110thms.pdf (4 pages, 80533 bytes).
+usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/
+local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texli
+ve/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/f
+onts/type1/urw/times/utmri8a.pfb>
+Output written on mathh110thms.pdf (4 pages, 87295 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 57 named destinations out of 1000 (max. 500000)
+ 144 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 61 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
