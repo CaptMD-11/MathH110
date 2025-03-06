@@ -1,48 +1,4 @@
-\documentclass[12pt]{article}
-% \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{authblk}
-\usepackage{tkz-euclide}
-\usepackage{tikz}
-\usepackage{changepage}
-\usepackage{lipsum}
-\usepackage{tree-dvips}
-\usepackage{qtree}
-\usepackage[linguistics]{forest}
-\usepackage[hidelinks]{hyperref}
-\usepackage{mathtools}
-\usepackage{blindtext}
-% \usepackage[cal=esstix,frak=euler,scr=boondox,bb= pazo]{mathalfa}
-% the following 2 packages are used for changing the font. 
-\usepackage{mathptmx}
-\usepackage{mathrsfs}
-\usepackage{graphicx}
-\usepackage{setspace}
-\graphicspath{{./images/}}
-\allowdisplaybreaks
-\allowbreak
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}
-\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
-\theoremstyle{named}
-\newtheorem*{namedconjecture}{Distinct Factorizations Conjecture}
-\newtheorem{conjecture}{Conjecture}
-\DeclareMathOperator{\sech}{sech}
-\DeclareMathOperator{\arcsec}{arcsec}
-\DeclareMathOperator{\lcm}{lcm}
-\DeclareMathOperator{\curl}{curl}
-\DeclareMathOperator{\Res}{Res}
-\DeclareMathOperator{\Aut}{Aut}
-\DeclareMathOperator{\id}{id}
-\DeclareMathOperator{\nul}{nul}
-\DeclareMathOperator{\End}{End}
-\newcounter{customDef}
-\renewcommand{\thecustomDef}{\arabic{customDef}}
-\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
-\begin{document}
+\input{~/normal-preamble.tex}
 
 \begin{center}
     Math H110 Definitions. 
@@ -75,6 +31,9 @@
 	\item \textbf{Dual Space. } Let $V$ be an $F$-vector space. Then the dual space of $V$ is $V' = \mathscr{L}(V,F)$ where the elements of $V'$ are called linear functionals. 
 	\item \textbf{Annihilator. } For a subspace $U \subseteq V$, we define the annihilator of $U$ to be $U_0 = \{\phi \in V' \mid \phi(u) = 0 \forall u \in U\}$. 
 	\item \textbf{Double Dual. } Let $V$ be a finite-dimensional vector space with dual $V'$. Then the double dual of $V$ is $(V')' = V'' = V$. Also, $\dim V = n = \dim V' = \dim V''$. 
+	\item \textbf{Eigenvector / eigenvalue. } Let $T \in \mathscr{L}(V)$. Then an eigenvector of $T$ is a $v \in V$ ($v \neq 0$) such that $Tv = \lambda v$ ($\lambda \in F$ is called an eigenvalue), and $v$ is an eigenvector of $T$. 
+	\item \textbf{Eigenspace. } Let $T \in \mathscr{L}(V)$ and take $\lambda$ to be an eigenvalue of $T$. Then, $E(\lambda,T) = \{v \in V \mid Tv = \lambda v\} \neq \emptyset$ is written as $V_\lambda$ and is called the eigenspace of $\lambda$, which is a subspace of $V$. 
+	\item \textbf{Invariant subspace. } $E$ is a $T$-invariant subspace if $T \in \mathscr{L}(V)$ with $T(E) \subseteq E$. 
 \end{enumerate}
 
 \end{document}

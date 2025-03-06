@@ -1,47 +1,4 @@
-\documentclass[12pt]{article}
-% \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{authblk}
-\usepackage{tkz-euclide}
-\usepackage{tikz}
-\usepackage{changepage}
-\usepackage{lipsum}
-\usepackage{tree-dvips}
-\usepackage{qtree}
-\usepackage[linguistics]{forest}
-\usepackage[hidelinks]{hyperref}
-\usepackage{mathtools}
-\usepackage{blindtext}
-% \usepackage[cal=esstix,frak=euler,scr=boondox,bb= pazo]{mathalfa}
-% the following 2 packages are used for changing the font. 
-\usepackage{mathptmx}
-\usepackage{mathrsfs}
-\usepackage{graphicx}
-\usepackage{setspace}
-\graphicspath{{./images/}}
-\allowdisplaybreaks
-\allowbreak
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}
-\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
-\theoremstyle{named}
-\newtheorem*{namedconjecture}{Distinct Factorizations Conjecture}
-\newtheorem{conjecture}{Conjecture}
-\DeclareMathOperator{\sech}{sech}
-\DeclareMathOperator{\arcsec}{arcsec}
-\DeclareMathOperator{\lcm}{lcm}
-\DeclareMathOperator{\curl}{curl}
-\DeclareMathOperator{\Res}{Res}
-\DeclareMathOperator{\Aut}{Aut}
-\DeclareMathOperator{\id}{id}
-\DeclareMathOperator{\nul}{nul}
-\newcounter{customDef}
-\renewcommand{\thecustomDef}{\arabic{customDef}}
-\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
-\begin{document}
+\input{~/normal-preamble.tex}
 
 \begin{center}
     Math H110 Theorems. 
@@ -112,6 +69,10 @@
 	\item \textbf{Theorem. } $F[x]$ is a principal ideal domain; that is, it is an integral domain in which every ideal in $F[x]$ is principal. 
 	\item \textbf{Theorem. } Let $T: V \to V$, $V$ finite-dimensional, and let $\alpha: F[x] \to \mathscr{L}(V)$, with $f \mapsto f(T)$. Also, we have $\ker\alpha$ to be the principal ideal $(m(x))$. Then, $m(x)$ is the minimal polynomial of $T$ and has degree $\leq n^2$. 
 	\item \textbf{Cayley-Hamilton Theorem. } Let $T: V \to V$, $V$ finite-dimensional, and let $\alpha: F[x] \to \mathscr{L}(V)$, with $f \mapsto f(T)$. Also, we have $\ker\alpha$ to be the principal ideal $(m(x))$, where $m(x)$ is the minimal polynomial of $T$. Then, the characteristic polynomial is in $\ker\alpha$; that is, we can plug in the matrix for $T$ into its characteristic polynomial and we get that it is equal to the 0-matrix. 
+	\item \textbf{Prop. } For $f(x) \in F[x]$ and $\lambda \in F$, $f(\lambda)=0$ iff $f$ is divisible by $x - \lambda$, where $x-\lambda$ is an irreducible polynomial. 
+	\item \textbf{Cor. } A polynomial of degree $n$ can have at most $n$ roots. 	
+	\item \textbf{Cor. } A polynomial with infinitely many roots is identically the zero polynomial. 
+	\item \textbf{Lemma. } Let $f \in \mathbb{R}[x]$ be a real polynomial. If $\lambda$ is a complex root of $f$, so is $\overline{\lambda}$, which is the complex conjugate of $\lambda$. 
 \end{enumerate}
 
 \end{document}
