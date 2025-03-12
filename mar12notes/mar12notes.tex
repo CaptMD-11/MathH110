@@ -1,0 +1,31 @@
+\input{~/normal-preamble.tex}
+
+\begin{center}
+	H110 Lecture Notes - March 12, 2025. 
+\end{center}
+
+As a starter, take $T: V \to V$, where $V$ is finite-dimensional (where $V$ is a vector space over the field $F$, and we can consider $F$ to be algebraically closed). Now, consider the following proposition. 
+\\
+\\
+\textbf{Prop. } If $T$ is an operator on a finite-dimensional $F$-vector space, then the minimal polynomial of $T$ has degree at most $\dim V$. 
+\\
+\\
+We now give an outline of the proof. As a preliminary matter, consider the map $\alpha: F[x] \to \mathscr{L}(V)$, where $\dim V = n$. Then, $\alpha$ gives the mapping $g(x) \mapsto g(T)$ and $\nul \alpha = (m(x)) \subseteq F[x]$. The proof is done by induction on the dimension. Now look at the base case(s). If $n=0$, then $V = (0)$, $f(x)=1$, and $f(T) = T = 0$. If $n=1$, then $V=F \cdot v$, $Tv = \lambda v$, so $(T - \lambda I)v=0$, and $f(x)=x-\lambda$. If $n=2$, we have $V=F^2$, and $T$ corresponds to $T = \begin{pmatrix} a & b \\ c & d \end{pmatrix} =: M$. Then, $M^2 - (a+d)M + (ad-bc)M^0 = 0$. Now, consider the case where $n \geq 2$. Then, necessarily, $V \ni v \neq 0$, and let $X$ be the smallest $T$-invariant subspace of $V$ containing $v$. When $n=2$, $X \ni v$, and we do not know if $Tv = \lambda v$ (which would then give $X = F \cdot v$). We set $v, Tv$ to be linearly independent. Let now $X = \textrm{span}(v,Tv,T^2v,\dots)$. Write $v,Tv,\dots,T^nv$ (which is a list of length $n+1 > \dim V = n$). Thus, $v,Tv,\dots,T^nv$ is linearly dependent. Say $v,Tv,\dots,T^{m-1}v$ is linearly independent (with $v,Tv,\dots,T^mv$ linearly dependent). Then, $T^mv = a_0v + a_1Tv + \dots + a_{m-1}T^{m-1}v$ is a linear dependence relation. Take $h(x) = x^m - (a_{m-1}x^{m-1} + \dots + a_0)$. Then, $h(T) \cdot v = 0$, $h(T) Tv = T(h(T)v) = T(0) = 0$. Thus, $h(T)=0$ on $X$, $h$ has degree $m$, and $\dim X = m$. Then, $T^{m+1}v = T(T^{m}v) = \left(\sum_{i=0}^{m-2}a_iT^{i+1}v\right) + a_mT^mv$. Thus, $X = \textrm{span}(v,Tv,\dots,T^{m-1}v)$. Our goal now is to show that there exists an $f(x)$ (with $\deg f \leq n$) with $f(T)=0$ on $V$. We have shown $0 \subsetneq X \subseteq V$, where $X$ is $T$-stable (meaning applying $T$ to the list $v,Tv,T^2v,\dots$ results in a shifting of the list) and there exists a polynomial $h(x)$ with $\deg h = \dim X$ such that $h(T) = 0$ on $X$. 
+\\
+\\
+Consider now the question: Is there a $v \in V$ such that $X = \textrm{span}(v,Tv,\dots,T^{m-1}v)$ is all of $V$? Take now $T=I$. Then, $v = Tv = \dots = v$. Now, look at $V/X$. Since $X$ is $T$-stable, we have $V/X$ has an induced action of $T$, meaning that we have $T_{V/X}: V/X \to V/X$ (with $v + X \mapsto Tv + X$) and $T\mid_X: X \to X$ (so $h(T\mid_X) = 0$). We have $\dim X \geq 1$, while it could be that $\dim X \leq n$. However, $\dim(V/X) < n$, since $\dim(V/X) = \dim V - \dim X$. The induction hypothesis gives $\dim(V/X) < n$. So there exists a polynomial $g \in X$ with $\deg g \leq \dim(V/X)$ such that $g(T\mid_{V/X}) = 0$ (denote this last equation as $\ast$). Now consider $g(T): V \to V$, so $\ast$ gives $\textrm{range} g(T) \subseteq X$. Define $f=gh=hg$. Then, $\deg f = \deg g + \deg h$. We have $\deg h = \dim X$ and $\deg g \leq \dim (V/x) = n-m$. Thus, $\deg f \leq n$. Now, take $(hg)(T) = h(T) \circ g(T) = 0$, and we are done. \qed
+\\
+\\
+\textbf{Prop. } If $T$ is upper-triangular with respect to some basis of $V$, and if the diagonal entries of an upper-triangular matrix representation of $T$ are $\lambda_1,\dots,\lambda_n$, then $(T-\lambda_1I) \cdot \dots \cdot (T-\lambda_nI) = 0$. 
+\\
+\\
+Take an upper-triangular matrix with respect to the basis $v_1,\dots,v_n$. Then, $Tv_1 = \lambda_1v_1$, $Tv_2 = \lambda_2v_2 + a_{12}v_1$, $Tv_3 = \lambda_3v_3 + (a_{13}v_1 + a_{23}v_2)$. Thus, $(T - \lambda_1I) \cdot \dots \cdot (T-\lambda_nI)=0$ iff $((T-\lambda_1I) \cdot \dots \cdot (T-\lambda_nI))v_j$ (where $v_j$ is a basis vector). So, $(T-\lambda_1I)v_1=0$, $(T-\lambda_2I)v_2 = a_{12}v_1$, and $(T-\lambda_1I)(T-\lambda_2I)v_2 = 0$. Now consider $(x-\lambda_1) \cdot \dots \cdot (x-\lambda_n) =: f(x)$ (where $f$ is the characteristic polynomial). Then, $f(T)=0$, so the minimal polynomial must divide $f$. Consider the following examples: 
+\\
+\begin{enumerate}
+	\item Take $T = I_n$. Then, $f(x) = (x-1)^n$ and $m(x) = x-1$. 
+	\item Take $T = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$. Then, $f(x) = (x-1)^2$, but $m(x) = (x-1)^2$. 
+\end{enumerate}
+
+So far, we know that the eigenvalues of $T$ are the roots of the minimal polynomial. Thus, every eigenvalue of $T$ is one of the diagonal elements $\lambda_i$. We explore the converse next class. 
+
+\end{document}
