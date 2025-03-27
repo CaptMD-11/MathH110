@@ -185,6 +185,34 @@
 		\item every eigenvalue of $ST$ is an eigenvalue of $S$ times an eigenvalue of $T$. 
 	\end{enumerate}
 	\item 8A. 
+	\item \textbf{sequence of increasing null spaces. } Let $T \in L(V)$. Then $\{0\} = \nul T^0 \subseteq \nul T_1 \subseteq \dots \subseteq \nul T^k \subseteq \dots$. 
+	\item \textbf{equality in the sequence of null spaces. } Let $T \in L(V)$ and $m$ is a nonnegative integer such that $\nul T^m = \nul T^{m+1}$. Then $\nul T^m = \nul T^{m+1} = \dots $. 
+	\item \textbf{null spaces stop growing. } Let $T \in L(V)$. Then $\nul T^{\dim V} = \nul T^{\dim V +1} = \dots$. 
+	\item \textbf{$V$ is the direct sum of $\nul T^{\dim V}$ and $\range T^{\dim V}$. } Let $T \in L(V)$. Then $V = \nul T^{\dim V} \oplus \range T^{\dim V}$. 
+	\item \textbf{generalized eigenvector. } Let $T \in L(V)$ and $\lambda$ be an eigenvalue of $T$. A vector $v \in V$ ($v \neq 0$) is called a generalized eigenvector of $T$ corresponding to $\lambda$ if $(T - \lambda I)^k v = 0$ for some $k \in \mathbb{Z}_{>0}$. 
+	\item \textbf{a basis of generalized eigenvectors. } Let $F = \mathbb{C}$ and $T \in L(V)$. Then there is a basis of $V$ consisting of generalized eigenvectors of $T$. 
+	\item \textbf{generalized eigenvector corresponds to a unique eigenvalue. } Let $T \in L(V)$. Then each generalized eigenvector of $T$ corresponds to only one eigenvalue of $T$. 
+	\item \textbf{linearly independent generalized eigenvectors. } Let $T \in L(V)$. Then every list of generalized eigenvectors of $T$ corresponding to distinct eigenvalues of $T$ is linearly independent. 
+	\item \textbf{nilpotent. } An operator is called nilpotent if some power of it is 0. 
+	\item \textbf{nilpotent operator raised to dimension of domain is 0. } Let $T \in L(V)$ be nilpotent. Then $T^{\dim V} = 0$. 
+	\item \textbf{eigenvalues of nilpotent operator. } Let $T \in L(V)$. Then: 
+	\begin{enumerate}
+		\item if $T$ is nilpotent then 0 is an eigenvalue of $T$ and $T$ has no other eigenvalues. 
+		\item if $F = \mathbb{C}$ and 0 is the only eigenvalue of $T$, then $T$ is nilpotent. 
+	\end{enumerate}
+	\item \textbf{minimal polynomial \& upper-triangular matrix of nilpotent operator. } Let $T \in L(V)$. Then TFAE: 
+	\begin{enumerate}
+		\item $T$ is nilpotent. 
+		\item minimal polynomial of $T$ is $z^m$ for some positive integer $m$. 
+		\item there is a basis of $V$ with respect to which the matrix of $T$ has the form
+		$$
+		\begin{pmatrix}
+		0 & & * \\
+		 & \ddots & \\
+		0 & & 0
+		\end{pmatrix}
+		$$. 
+	\end{enumerate}
 	\item 8B. 
 	\item \textbf{generalized eigenspace. } Suppose $T \in L(V)$ and $\lambda \in F$. The generalized eigenspace of $T$ corresponding to $\lambda$ is $G(\lambda, T) = \{v \in V \mid (T - \lambda I)^k \textrm{ for some } k \in \mathbb{Z}_{>0}\}$, which is the set of generalized eigenvectors of $T$ corresponding to $\lambda$, including the 0-vector. 
 	\item \textbf{description of generalized eigenspaces. } Suppose $T \in L(V)$ and $\lambda \in F$. Then $G(\lambda, T) = \nul(T - \lambda I)^{\dim V}$. 
