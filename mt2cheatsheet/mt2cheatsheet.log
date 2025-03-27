@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.31)  24 MAR 2025 17:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.31)  26 MAR 2025 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1472,13 +1472,13 @@ Package rerunfilecheck Info: File `mt2cheatsheet.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37588 strings out of 476025
- 845762 string characters out of 5790017
+ 37618 strings out of 476025
+ 846002 string characters out of 5790017
  1936388 words of memory out of 5000000
  57078 multiletter control sequences out of 15000+600000
  530543 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,12n,123p,1655b,751s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 124i,12n,123p,1655b,753s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -1490,10 +1490,10 @@ cal/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive
 -dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on mt2cheatsheet.pdf (4 pages, 139819 bytes).
+Output written on mt2cheatsheet.pdf (4 pages, 143930 bytes).
 PDF statistics:
- 395 PDF objects out of 1000 (max. 8388607)
- 363 compressed objects within 4 object streams
- 259 named destinations out of 1000 (max. 500000)
+ 431 PDF objects out of 1000 (max. 8388607)
+ 399 compressed objects within 4 object streams
+ 289 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
