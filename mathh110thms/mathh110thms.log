@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.31)  22 MAR 2025 23:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.31)  31 MAR 2025 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1366,13 +1366,13 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 Non-PDF special ignored!
 <special> header=tree-dvips91.pro
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3] [4] [5] (./mathh110thms.aux)
+[2] [3] [4] [5] [6] (./mathh110thms.aux)
 Package rerunfilecheck Info: File `mathh110thms.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 38281 strings out of 476025
- 868233 string characters out of 5790017
+ 38286 strings out of 476025
+ 868267 string characters out of 5790017
  1870388 words of memory out of 5000000
  57943 multiletter control sequences out of 15000+600000
  517733 words of font info for 54 fonts, out of 8000000 for 9000
@@ -1389,10 +1389,10 @@ l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
 exlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
 al/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on mathh110thms.pdf (5 pages, 130585 bytes).
+Output written on mathh110thms.pdf (6 pages, 133268 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 99 named destinations out of 1000 (max. 500000)
+ 210 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
+ 104 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
