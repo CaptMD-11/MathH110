@@ -1,0 +1,423 @@
+\input{~/cheatsheet-preamble.tex}
+
+MIDTERM 1. 
+\begin{enumerate}
+	\item 1A. (NOTHING)
+	\item 1B. 
+	\item \textbf{Vector Space. } A vector space $V$ is a set that has scalar multiplication and vector addition defined on it with the following properties: 
+	\begin{enumerate}
+		\item Additive commutativity. 
+		\item Additive associativity of vectors ($u+(v+w)=(u+v)+w$) and multiplicative associativity for scalars ($(ab)v = a(bv)$). 
+		\item Additive identity. 
+		\item Additive inverses. 
+		\item Multiplicative identity. 
+		\item BOTH distributive properties. 
+	\end{enumerate}
+	\item \textbf{V-space (unique additive identity) } A vector space has a unique additive identity. 
+	\item \textbf{V-space (unique additive inverses) } Every element in a vector space has a unique additive inverse. 
+	\item 1C. 
+	\item \textbf{Subspace. } A subset $U \subseteq V$ is a subspace of $V$ if it is a vector space with the same additive identity, scalar multiplication, and vector addition as defined on $V$. 
+	\item \textbf{Conditions for a Subspace. } A subset $U \subseteq V$ is a subspace of $V$ iff $U$ is closed under vector addition, scalar multiplication, and contains the "zero" element as in $V$. 
+	\item \textbf{Sums of Subspaces. } Let $V_1,\dots,V_n$ be subspaces of $V$. Then, we have the sum of subspaces as $V_1 + \dots + V_n = \{v_1 + \dots + v_n \mid v_i \in V_i \textrm{ for all } i\}$. 
+	\item \textbf{Smallest subspace containing each subspace} Suppose $V_1,\dots,V_n$ are subspaces of $V$. Then, $V_1 + \dots + V_n$ is the smallest subspace of $V$ containing $V_1,\dots,V_n$. 
+	\item \textbf{Direct Sum. } Suppose $V_1,\dots,V_m$ are subspaces of $V$. Then: 
+	\begin{enumerate}
+		\item The sum $V_1 + \dots + V_m$ is direct if each element of $V_1 + \dots + V_m$ can be written uniquely as a sum $v_1 + \dots + v_m$, where $v_i \in V_i$ for all $i$. 
+		\item If $V_1 + \dots + V_m$ is a direct sum, then we write $V_1 \oplus \dots \oplus V_m$. 
+	\end{enumerate}
+	\item \textbf{Conditions for a direct sum. } Suppose $V_1,\dots,V_n$ are subspaces of $V$. Then, $V_1 + \dots + V_n$ is direct iff the only way to write 0 from $v_1 + \dots + v_n$ is by taking $v_i=0$ for all $i$. 
+	\item \textbf{Direct sum of subspaces. } If $U,W$ are subspaces of $V$, then $U + W$ is direct iff $U \cap W = \{0\}$. 	
+	\item 2A. 
+	\item \textbf{Span is the smallest containing subspace. } The span of a list of vectors in $V$ is the smallest subspace containing all of the vectors in the list. 
+	\item \textbf{Zero polynomial. } The zero polynomial is said to have degree $-\infty$. 
+	\item \textbf{Linear Independence. } A list of vectors $v_1,\dots,v_n \in V$ is said to be linearly independent if $a_1v_1 + \dots + a_nv_n = 0$ implies $a_i=0$ for all $i$. Also, the empty list $()$ is said to be linearly independent. 
+	\item \textbf{Linear Dependence. } A list of vectors $v_1,\dots,v_n$ is said to be linearly dependent if $a_1v_1 + \dots + a_nv_=0$ impies $a_i \neq 0$ for some $i$. 
+	\item \textbf{Linear Dependence Lemma. } Suppose $v_1,\dots,v_m$ is a linearly dependent list in $V$. Then, there exists $k \in \{1,\dots,m\}$ such that $v_k \in \textrm{span}(v_1,\dots,v_{k-1})$. Furthermore, if $k$ satisfies the condition in the previous sentence and the $k^{th}$ term is removed from $v_1,\dots,v_m$, then the span of the remaining list equals $\textrm{span}(v_1,\dots,v_m)$. 
+	\item \textbf{length of linearly independent list < length of spanning list. } In a finite-dimensional vector space, the length of every linearly independent list is at most the length of every spanning list of vectors. 
+	\item \textbf{Finite Dimensional subspaces. } Every subspace of a finite-dimensional vector space is finite dimensional. 
+	\item 2B. 
+	\item \textbf{Basis. } A basis of $V$ is a list of vectors that is linearly independent and spans $V$. 
+	\item \textbf{Criterion for basis. } A list of vectors $v_1,\dots,v_n \in V$ is a basis of $V$ iff every $v \in V$ can be written uniquely in the form $v=a_1v_1 + \dots + a_nv_n$, where $a_i \in F$ for all $i$. 
+	\item \textbf{Every spanning list contains a basis. } Every spanning list in a vector space can be reduced to a basis of the vector space. 
+	\item \textbf{Basis of finite-dimensional vector space. } Every finite-dimensional vector space has a basis. 
+	\item \textbf{Every linearly independent list extends to a basis. } Every linearly independent list in a finite-dimensional vector space can be extended to a basis of the vector space. 
+	\item \textbf{Every subspace of $V$ is part of a direct sum equal to $V$. } Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then, there is a subspace $W$ of $V$ such that $V = U \oplus W$. 
+	\item 2C. 
+	\item \textbf{Basis length does not depend on basis. } Any two bases of a finite-dimensional vector space have the same length. 
+	\item \textbf{Dimension of a subspace. } If $V$ is finite-dimensional and $U$ is a subspace of $V$, then $\dim U \leq \dim V$. 
+	\item \textbf{Linearly independent list of the right length is a basis. } Suppose $V$ is finite-dimensional. Then, every linearly independent list of vectors in $V$ (with list length equal to $\dim V$) is a basis of $V$. 
+	\item \textbf{Subspace of full dimension equals the whole space. } Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$ such that $\dim U = \dim V$. Then, $U = V$. 
+	\item \textbf{Spanning list of the right length is a basis. } Suppose $V$ is finite-dimensional. Then, every spanning list of $V$ of length $\dim V$ is a basis of $V$. 
+	\item \textbf{Dimension of a sum. } If $V_1,V_2$ are subspaces of a finite-dimensional vector space, then $\dim (V_1+V_2) = \dim V_1 + \dim V_2 - \dim (V_1 \cap V_2)$. 
+	\item 3A. 
+	\item \textbf{Set of Linear Maps. } The linear of linear maps from $V \to W$ is written $\mathscr{L}(V,W)$ and the set of linear maps from $V \to V$ is written $\mathscr{L}(V)$. 
+	\item \textbf{Linear Map lemma. } Suppose $v_1,\dots,v_n$ is a basis of $V$ and $w_1,\dots,w_n \in W$. Then, there exists a unique linear map $T: V \to W$ such that $Tv_k = w_k$ for each $k$. 
+	\item \textbf{Linear maps take 0 to 0. } Suppose $T: V \to W$ is a linear map. Then, $T(0)=0$. 
+	\item 3B. 
+	\item \textbf{null space is a subspace. } Suppose $T \in \mathscr{L}(V,W)$. Then, $\null T$ is a subspace of $V$. 
+	\item \textbf{injectivity iff null is 0. } Let $T \in \mathscr{L}(V,W)$. Then, $T$ is 1-1 iff $\nul T = \{0\}$. 
+	\item \textbf{range is a subspace. } If $T \in \mathscr{L}(V,W)$, then range $T$ is a subspace of $W$. 
+	\item \textbf{Fundamental Theorem of Linear Maps. } Suppose $V$ is finite-dimensional and $T \in \mathscr{L}(V,W)$. Then, range $T$ is finite dimensional and $\dim V = \dim \nul T + \dim \textrm{range} T$. 
+	\item \textbf{linear map to a lower-dim space is not 1-1. } Suppose $V,W$ are finite-dimensional vector spaces such that $\dim V > \dim W$. Then, no linear map from $V \to W$ is 1-1. 
+	\item \textbf{linear map to a higher-dim space is not onto. } Suppose $V,W$ are finite-dimensional vector spaces such that $\dim V < \dim W$. Then, no linear map from $V \to W$ is onto. 
+	\item 3C. (NOTHING)
+	\item 3D. 
+	\item \textbf{Theorem. } Let $V,W$ be finite-dimensional vector spaces such that $\dim V = \dim W$ and let $T \in \mathscr{L}(V,W)$. Then, $T$ is invertible iff $T$ is 1-1 iff $T$ is onto. 
+	\item \textbf{isomorphism. } An isomorphism is an invertible linear map. 
+	\item \textbf{dimension and isomorphic. } Two finite-dimensional vector spaces are isomorphic iff they have the same dimension. 
+	\item \textbf{Theorem. } Suppose $V$ and $W$ are finite-dimensional. Then, $\mathscr{L}(V,W)$ is finite-dimensional and $\dim \mathscr{L}(V,W) = (\dim V)(\dim W)$.
+	\item \textbf{ST=I iff TS=I (on vector spaces of the same dimension). } Suppose $V$ and $W$ are finite-dimensional vector spaces of the same dimension, $S \in \mathscr{L}(W,V), T \in \mathscr{L}(V,W)$. Then $ST=I$ iff $TS=I$. 
+	\item \textbf{matrix of identity operator with respect to two bases. } Suppose $u_1,\dots,u_n$ and $v_1,\dots,v_n$ are two bases of $V$. Then, the matrices $\mathscr{M}(I; u_1,\dots,u_n; v_1,\dots,v_n)$ and $\mathscr{M}(I; v_1,\dots,v_n; u_1,\dots,u_n)$ are invertible and are inverses of each other. 
+	\item \textbf{Change of basis formula. } Let $T \in \mathscr{L}(V,W)$. Suppose $u_1,\dots,u_n$ and $v_1,\dots,v_n$ are two bases of $V$. Let $A = \mathscr{M}(T; u_1,\dots,u_n)$ and $B = \mathscr{M}(T; v_1,\dots,v_n)$ and $C = \mathscr{M}(I; u_1,\dots,u_n; v_1,\dots,v_n)$. Then, $A = C^{-1}BC$. 
+	\item Suppose that $v_1,\dots,v_n$ is a basis of $V$ and $T \in \mathscr{L}(V)$ is invertible. Then, $\mathscr{M}(T^{-1}) = (\mathscr{M}(T))^{-1}$, where both matrices are with respect to the basis $v_1,\dots,v_n$. 
+	\item 3E. 
+	\item \textbf{Product of vector spaces is a vector space. } Suppose $V_1,\dots,V_m$ are vector spaces over $\mathbb{F}$. Then, $V_1 \times \dots \times V_m$ is a vector space over $\mathbb{F}$. 
+	\item \textbf{dimension of a product is the sum of the dimensions. } Suppose $V_1,\dots,V_m$ are finite-dimensional vector spaces. Then, $V_1 \times \dots \times V_m$ is finite-dimensional and $\dim(V_1 \times \dots \times V_m) = \dim V_1 + \dots + \dim V_m$. 
+	\item \textbf{Products and direct sums. } Suppose $V_1,\dots,V_m$ are subspaces of $V$. Define a linear map $\Gamma: (V_1 \times \dots \times V_m) \to (V_1 + \dots + V_m)$ by $\Gamma(v_1,\dots,v_m) = v_1 + \dots + v_m$. Then, $V_1 + \dots + V_m$ is direct iff $\Gamma$ is 1-1. 
+	\item \textbf{direct sum iff dimensions add up. } Suppose $V$ is finite-dimensional and $V_1,\dots,V_m$ are subspaces of $V$. Then, $V_1 + \dots + V_m$ is direct iff $\dim(V_1 + \dots + V_m) = \dim V_1 + \dots + \dim V_m$. 
+	\item \textbf{v + U. } Suppose $v \in V$ and $U \subseteq V$. Then, $v + U = \{v + u \mid u \in U\}$. 
+	\item \textbf{Translate. } For $v \in V$ and $U \subseteq V$, the set $v + U$ is called a translate of $U$. 
+	\item \textbf{Quotient Space. } Let $U$ be a subspace of $V$. Then, the quotient space $V/U$ is the set of all translates of $U$, that is, $V/U = \{v + U \mid v \in V\}$. 
+	\item \textbf{two translates of a subspace are either equal or disjoint. } Suppose $U$ is a subspace of $V$ and $v,w \in V$. Then, $v-w \in U$ iff $v + U = w + U$ iff $(v + U) \cap (w+U) \neq \emptyset$. 
+	\item \textbf{Addition and scalar multiplication on Quotient space. } Let $U$ be a subspace of $V$. Then, we have (for all $v,w \in V$, $\lambda \in F$): 
+	\begin{enumerate}
+		\item addition on $V/U$: $(v + U) + (w + U) = (v+w) + U$. 
+		\item scalar multiplication on $V/U$: $\lambda(v + U) = (\lambda v) + U$. 
+	\end{enumerate}
+	\item \textbf{quotient space is a vector space. } Let $U$ be a subspace of $V$. Then, the quotient space $V/U$ is a subspace of $V$ under the defined scalar multiplication and vector addition. 
+	\item \textbf{quotient map. } Let $U$ be a subspace of $V$. Then, the quotient map $\pi: V \to V/U$ is the linear map defined by $\pi(v) = v + U$ for each $v \in V$. 
+	\item \textbf{dimension of quotient space. } Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then, $\dim (V/U) = \dim V - \dim U$.
+	\item \textbf{Column rank. } The column rank (rank of the column span of a matrix) is $\textrm{rank}T_A$. 
+	\item \textbf{Theorem. } If $A$ is a rectangular matrix of elements in a field $F$, then row rank $A$ = column rank $A$.  
+	\item RIBET DEFS. 
+	\item \textbf{Endomorphism. } An endomorphism is a group homomorphism from a set to itself (NOTE: does not have to be invertible.)
+    \item \textbf{End V. } The symbol $\End V$ is the set of all endomorphisms on $V$ (and multiplication on $\End V$ is defined to be function composition). 
+    \item \textbf{F-Module. } An $F-$module is a generalization of vector spaces over rings. 
+    \item \textbf{Linear Map / Linear Transformation. } Let $V$ be a vector space over a field $F$ with $v,w \in V$. Let $T$ be a map on $V$ with $T(v+w) = T(v) + T(w)$ and $T(\lambda v) = \lambda T(v)$ for all $\lambda \in F$. Then, $T$ is called a linear map or linear transformation. 
+    \item \textbf{Linear Operator. } If $T$ is a linear transformation on a vector spaces $V$ with $T: V \to V$, then $T$ is linear operator on $V$. 
+    \item \textbf{Spans. } The list $v_1,\dots,v_n$ spans $V$ iff $T: F^n \to V$ is onto. 
+        \item \textbf{Finite-dimensional. } $V$ is finite-dimensional if $V$ is spanned by a finite list of vectors. 
+      \item \textbf{Direct Sum of Subspaces. } Let $X_1,\dots,X_t$ be subspaces of $V$. Then, their direct sum, $X_1 \oplus \dots \oplus X_t$, is given by a 1-1 linear map $T$, with $T: X_1\times \dots \times X_t \to V$.
+	\item \textbf{Complement of Subspace. } Let $X,Y$ be subspaces of of $V$. Then, $Y$ is a complementary subspace of $X$ iff $X+Y=V$ and $X+Y = X \oplus Y$. 
+	\item \textbf{Rank, Nullity. } The rank of a linear map is the dimension of the range of the linear map. The nullity is the dimension of the null space of the linear map. 
+	\item \textbf{Null Space. } The null space is the set of vectors that are mapped to $0$. 
+	\item \textbf{Isomorphic Vector Spaces. } Two vector spaces $V, W$ are isomorphic if there exists a linear map $T: V \to W$ that is 1-1 and onto. 
+	\item \textbf{Quotient Space. } Suppose $U$ is a subspace of $V$. Then, the quotient space $V / U$ is the set $V / U = \{v + U \mid v \in V\}$. 
+	\item \textbf{Column Rank. } The column rank (rank of the column span of a matrix) is defined to be $\textrm{rank}T_A$. 
+	\item \textbf{Conjugation. } Let $A$ be an $n \times n$ matrix (over $F$) and let $Q$ be an $n \times n$ matrix (over $F$). Then, the conjugation of $A$ by $Q$ is $Q^{-1}AQ$.
+	\item RIBET THMS. 
+	\item \textbf{Lemma. } Let $F$ be a field, $\lambda \in F$, $V$ a vector space over $F$ (denoted by $V/F$), $v \in V$. Then, if $\lambda v = 0$, then $\lambda=0$ or $v=0$. 
+    \item \textbf{Lemma. } A vector space over a field is a module over a field. 
+    \item \textbf{Theorem. } The intersection of a family of subspaces of a vector space $V$ is a subspace of $V$. 
+    \item \textbf{Lemma. } Let $S=\{v_1,\dots,v_t\}$. Then the subspace of all linear combinations of the elements of $S$ is the $\mathrm{span}S$. 
+    \item \textbf{Theorem. } Let $L=v_1,\dots,v_n$ be a list of vectors in a vector space $V$ over a field $F$ and let $T: F^n: \to V$ be linear transformation with $(\lambda_1,\dots,\lambda_n) \mapsto \lambda_1v_1 + \dots + \lambda_nv_n$. Then, we have the following: 
+    \begin{enumerate}
+        \item $L$ spans $V$ iff $T$ is onto. 
+        \item $L$ is linearly independent iff $T$ is 1-1 iff $\nul T = \{0\}$. 
+        \item $L$ is a basis iff $T$ is 1-1 and onto. 
+    \end{enumerate}
+    \item \textbf{Prop. } Consider $T: F^n \to V$ with $(\lambda_1,\dots,\lambda_n) \mapsto \lambda_1v_1 + \dots + \lambda_nv_n$, so $T(e_i)=v_i$ for all $i$. Then, $T$ is the unique linear map $F_n \to V$ that sends $e_i \mapsto v_i$ for all $i$. 
+    \item \textbf{Theorem. } Every subspace $X$ of $V$ has complement. 
+	\item \textbf{Lemma. } If $v_1,\dots,v_t$ is linearly dependent list, then there is an index $k$ such that $v_k \in \textrm{span}(v_1,\dots,v_{k-1},v_{k+1},\dots,v_t)$. Furthermore, the span of the list of length $t-1$ gotten by removing $v_k$ from the list is the same as the span of the original list. 
+	\item \textbf{Prop. } In a finite-dimensional vector space, the length is of every linearly independent list of vectors is less than or equal to the length of every spanning list of vectors. 
+	\item \textbf{Cor. } Two bases of $V$ have the same number of elements. 
+	\item \textbf{Prop. } $X+Y$ is direct iff the null space of the sum map is $\{0\}$. 
+	\item \textbf{Theorem. } Every subspace of a finite-dimensional vector space is finite-dimensional. 
+	\item \textbf{Prop. } Every spanning list for a vector space can be pruned down to a basis of the space. 
+	\item \textbf{Cor. } Every finite-dimensional vector space has a basis. 
+	\item \textbf{Prop. } In a finite-dimensional vector space, every linearly independent list can be extended to a basis of the space. 
+	\item \textbf{Major Theorem. } Every subspace of a finite-dimensional vector space has a complement. 
+	\item \textbf{Prop. } Let $X,Y$ be subspaces of a finite-dimensional vector space $V$. Then: 
+	\begin{enumerate}
+		\item $\dim X + \dim Y = \dim V$. 
+		\item $X \cap Y = \{0\}$. 
+	\end{enumerate}
+	Then, $V=X \oplus Y$. 
+	\item \textbf{Prop. } $\dim(X \oplus Y) = \dim X + \dim Y$. 
+	\item \textbf{Prop. } If $V$ is a finite-dimensional vector space (with $\dim V = n$), then every subspace has dimension at most $n$. 
+	\item \textbf{Prop. } Let $\dim V = n$. Then, a linearly independent list of vectors of $V$ with length $n$ is a basis for $V$. 
+	\item \textbf{Prop. } Let $\dim V = n$. Then, every spanning list for $V$ of length $n$ is a basis for $V$.
+	\item \textbf{Lemma. } The list $(x_1,0),\dots,(x_t,0);(0,y_1),\dots,(0,y_k)$ of length $t+k$ is a basis of $X \times Y$. 
+	\item \textbf{Cor. } $\dim (X \times Y) = \dim X + \dim Y$. 
+	\item \textbf{Cor. } Let $T: V \to W$ be a linear map with $\dim V = d$. Then, $\textrm{rank}T \leq d$. 
+	\item \textbf{Rank-Nullity Theorem. } $\dim V = \textrm{rank}V + \textrm{nullity}V$. 
+	\item \textbf{Prop. } If $T: V \to W$ is 1-1, then $\textrm{nullity}T = 0$. 
+	\item \textbf{Cor. } If $T: V \to W$ is 1-1 and onto, then $\dim V = \dim W$. 
+	\item \textbf{Theorem. } The set of linear maps $V \to W$ is a vector space $L \cdot (F^n,W) \to T \longrightarrow (Te_1,\dots,Te_n) \in W^n$. 
+	\item \textbf{Theorem. } $\dim (X+Y) = \dim X + \dim Y - \dim (X \cap Y)$. 
+	\item \textbf{Cor. } $\dim (V/X) = \dim V - \dim X$. 
+	\item \textbf{Theorem. } If $A$ is a rectangular matrix with elements in a field $F$, then row rank $A$ = column rank $A$. 
+	\item \textbf{Prop. } Let $T: V \to W$ be 1-1. Then, $\dim W \geq \dim V$. 
+	\item \textbf{Prop. } Let $T: V \to W$ be onto. Then, $\dim V \geq \dim W$. 
+	\item \textbf{Prop. } Let $T: V \to W$ and $\dim V = \dim W$. Then, $T$ 1-1 iff $T$ onto iff $T$ bijective iff $T$ invertible. 
+\end{enumerate}
+
+MIDTERM 2. 
+\begin{enumerate}
+	\item 1C, 2A, 2B, 2C, 3B, 3C, 3D, 3E. 
+	\item \textbf{Direct sum of subspaces. } If $U,W$ are subspaces of $V$, then $U + W$ is direct iff $U \cap W = \{0\}$. 	
+	\item \textbf{Linear Dependence Lemma. } Suppose $v_1,\dots,v_m$ is a linearly dependent list in $V$. Then, there exists $k \in \{1,\dots,m\}$ such that $v_k \in \textrm{span}(v_1,\dots,v_{k-1})$. Furthermore, if $k$ satisfies the condition in the previous sentence and the $k^{th}$ term is removed from $v_1,\dots,v_m$, then the span of the remaining list equals $\textrm{span}(v_1,\dots,v_m)$. 
+	\item \textbf{Prop. } Let $V,W$ be finite-dimensional with $\dim W = \dim V$. Let $S \in \mathscr{L}(W,V)$, $T \in \mathscr{L}(V,W)$. Then, $ST=I$ iff $TS=I$. 
+	\item \textbf{ST=I iff TS=I (on vector spaces of the same dimension). } Suppose $V$ and $W$ are finite-dimensional vector spaces of the same dimension, $S \in \mathscr{L}(W,V), T \in \mathscr{L}(V,W)$. Then $ST=I$ iff $TS=I$. 
+	\item \textbf{matrix of identity operator with respect to two bases. } Suppose $u_1,\dots,u_n$ and $v_1,\dots,v_n$ are two bases of $V$. Then, the matrices $\mathscr{M}(I; u_1,\dots,u_n; v_1,\dots,v_n)$ and $\mathscr{M}(I; v_1,\dots,v_n; u_1,\dots,u_n)$ are invertible and are inverses of each other. 
+	\item \textbf{Product of vector spaces is a vector space. } Suppose $V_1,\dots,V_m$ are vector spaces over $\mathbb{F}$. Then, $V_1 \times \dots \times V_m$ is a vector space over $\mathbb{F}$. 
+	\item \textbf{dimension of a product is the sum of the dimensions. } Suppose $V_1,\dots,V_m$ are finite-dimensional vector spaces. Then, $V_1 \times \dots \times V_m$ is finite-dimensional and $\dim(V_1 \times \dots \times V_m) = \dim V_1 + \dots + \dim V_m$. 
+	\item \textbf{Products and direct sums. } Suppose $V_1,\dots,V_m$ are subspaces of $V$. Define a linear map $\Gamma: (V_1 \times \dots \times V_m) \to (V_1 + \dots + V_m)$ by $\Gamma(v_1,\dots,v_m) = v_1 + \dots + v_m$. Then, $V_1 + \dots + V_m$ is direct iff $\Gamma$ is 1-1. 
+	\item \textbf{direct sum iff dimensions add up. } Suppose $V$ is finite-dimensional and $V_1,\dots,V_m$ are subspaces of $V$. Then, $V_1 + \dots + V_m$ is direct iff $\dim(V_1 + \dots + V_m) = \dim V_1 + \dots + \dim V_m$. 
+	\item \textbf{dimension of quotient space. } Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then, $\dim (V/U) = \dim V - \dim U$.
+	\item 3F. 
+	\item \textbf{Linear functional. } A linear functional on $V$ is a linear map $\phi: V \to F$. 
+	\item \textbf{dual space. } The dual space of $V$ is $V' = \mathscr{L}(V, F)$. 
+	\item \textbf{dim space = dim dual space. } Suppose $V$ is finite-dimensional. Then $V'$ is also finite-dimensional and $\dim V = \dim V'$. 
+	\item \textbf{dual basis. } If $v_1,\dots, v_n$ is a basis of $V$, then the dual basis of $v_1,\dots,v_n$ is $\phi_1,\dots,\phi_n$ (elements of $V'$) where $\phi_j(v_k) = 1$ if $k=j$ and $\phi_j(v_k)=0$ if $k \neq j$. 
+	\item \textbf{dual basis gives coefficients for linear combination. } Suppose $v_1,\dots,v_n$ is a basis of $V$ and $\phi_1,\dots,\phi_n$ is dual basis. Then $v=\phi_1(v)v_1 + \dots + \phi_n(v)v_n$ for each $v \in V$. 
+	\item \textbf{dual basis is a basis of dual space. } Suppose $V$ is finite-dimensional. Then the dual basis of $V$ is a basis of $V'$. 
+	\item \textbf{dual map, $T'$. } Suppose $T \in \mathscr{L}(V,W)$. The dual map of $T$ is $T' \in \mathscr{L}(W', V')$ defined for each $\phi \in W'$ by $T'(\phi) = \phi \circ T$. 
+	\item \textbf{algebraic properties of dual maps. } we have $(S + T)' = S' + T', (\lambda S)' = \lambda S', (ST)' = T'S'$. 
+	\item \textbf{annihilator. } For $U \subseteq V$, the annihilator of $U$ is $U_0 = \{\phi \in V' \mid \phi(u) = 0 \forall u \in U\}$. 
+	\item \textbf{annihilator is a subspace. } If $U \subseteq V$, then $U^0 \subseteq V'$. 
+	\item \textbf{dimension of annihilator. } Suppose $V$ is finite-dimensional and $U \subseteq V$. Then $\dim U^0 = \dim V - \dim U$. 
+	\item \textbf{condition for annihilator to equal $\{0\}$ or whole space. } Suppose $V$ finite-dimensional and $U \subseteq V$. Then: 
+	\begin{enumerate}
+		\item $U^0 = \{0\}$ iff $U=V$. 
+		\item $U^0 = V'$ iff $U = \{0\}$. 
+	\end{enumerate}
+	\item \textbf{null space of $T'$. } Suppose $V,W$ finite-dimensional and $T \in \mathscr{L}(V,W)$. Then: 
+	\begin{enumerate}
+		\item $\nul T' = (\range T)^0$. 
+		\item $\dim \nul T' = \dim \nul T + \dim W - \dim V$. 
+	\end{enumerate}
+	\item \textbf{$T$ surjective equivalent to $T'$ injective. } Suppose $V,W$ finite-dimensional and $T \in \mathscr{L}(V,W)$. Then $T$ onto iff $T'$ 1-1. 
+	\item \textbf{range of $T'$. } Suppose $V,W$ finite-dim and $T \in \mathscr{L}(V,W)$. Then: 
+	\begin{enumerate}
+		\item $\dim \range T' = \dim \range T$. 
+		\item $\range T' = (\nul T)^0$. 
+	\end{enumerate}
+	\item \textbf{$T$ injective is equivalent to $T'$ surjective. } Suppose $V,W$ finite-dim and $T \in \mathscr{L}(V,W)$. Then $T$ 1-1 iff $T'$ onto. 
+	\item 5A. 
+	\item \textbf{equivalent conditions to be an eigenvalue. } Let $V$ be finite-dim and $T \in \mathscr{L}(V)$ and $\lambda \in F$. Then TFAE: 
+	\begin{enumerate}
+		\item $\lambda$ is an eigenvalue of $T$. 
+		\item $T - \lambda I$ not injective. 
+		\item $T - \lambda I$ not surjective. 
+		\item $T - \lambda I$ not invertible. 
+	\end{enumerate}
+	\item \textbf{linearly independent eigenvectors. } Let $T \in \mathscr{L}(V)$. Then every list of eigenvectors of $T$ corresponding to different eigenvalues is linearly independent. 
+	\item \textbf{operator cannot have more eigenvalues than dimension of space. } Let $V$ be finite-dim. Then each operator on $V$ has at most $\dim V$ distinct eigenvalues. 
+	\item \textbf{null space and range of $p(T)$ are invariant under $T$. } Suppose $T \in \mathscr{L}(V)$ and $p \in \mathscr{P}(F)$. Then $\nul p(T)$ and $\range p(T)$ are invariant under $T$. 
+	\item 5B. 
+	\item \textbf{existence of eigenvalues. } Every operator on a finite-dim nonzero complex vector space has an eigenvalue. 
+	\item \textbf{existence, uniqueness, and degree of minimal polynomial. } Suppose $V$ finite-dim and let $T \in \mathscr{L}(V)$. Then there is a unique monic polynomial $p \in \mathscr{P}(F)$ of smallest degree such that $p(T)=0$. Also, $\deg p \leq \dim V$. 
+	\item \textbf{minimal polynomial. } Suppose $V$ finite-dim and $T \in \mathscr{L}(V)$. Then the minimal polynomial of $T$ is the unique monic polynomial $p \in \mathscr{P}(F)$ of smallest degree such that $p(T)=0$. 
+	\item \textbf{eigenvalues are the zeros of minimal polynomial. } Let $V$ finite-dim and $T \in L(V)$. Then: 
+	\begin{enumerate}
+		\item zeros of the minimal polynomial of $T$ are the eigenvalues of $T$. 
+		\item if $V$ is a complex vector space, then minimal polynomial of $T$ has the form $(z-\lambda_1) \cdot \dots \cdot (z-\lambda_m)$, where $\lambda_1,\dots,\lambda_m$ is a list of all eigenvalues of $T$, possibly with repetitions. 
+	\end{enumerate}
+	\item \textbf{$q(T)=0$ iff $q$ is a polynomial multiple of the minimal polynomial. } Let $V$ finite-dim and $T \in L(V)$ and $q \in P(F)$. Then $q(T)=0$ iff $q$ is a polynomial multiple of the minimal polynomial. 
+	\item \textbf{minimal polynomial of a restriction operator. } Let $V$ finite-dim and $T \in L(V)$ and $U \subseteq V$ that is invariant under $T$. Then minimal polynomial of $T$ is a polynomial multiple of minimal polynomial of $T \mid_U$. 
+	\item \textbf{$T$ not invertible iff constant term of minimal polynomial of $T$ is 0. } Let $V$ finite-dim and $T \in L(V)$. Then $T$ is not invertible iff the constant term in the minimal polynomial of $T$ is 0. 
+	\item \textbf{even-dimensional null space. } Let $F = \mathbb{R}$ and $V$ finite-dim and $T \in L(V)$ and $b^2-4ac < 0$. Then $\dim(T^2 + bT + cI)$ is an even number. 
+	\item \textbf{operators on an odd-dimensional space have eigenvalues. } Every operator on an odd-dimensional vector space has an eigenvalue. 
+	\item 5C. 
+	\item \textbf{conditions for upper-triangular matrix. } Suppose $T \in L(V)$ and $v_1,\dots,v_n$ is a basis of $V$. Then TFAE: 
+	\begin{enumerate}
+		\item the matrix of $T$ with respect to $v_1,\dots,v_n$ is upper-triangular. 
+		\item $\textrm{span}(v_1,\dots,v_k)$ is invariant under $T$ for each $k = 1,2,\dots,n$. 
+		\item $Tv_k \in \textrm{span}(v_1,\dots,v_k)$ for each $k=1,\dots,n$. 
+	\end{enumerate}
+	\item \textbf{equation satisfied by operator with upper-triangular matrix. } Suppose $T \in L(V)$ and $V$ has a basis with respect to which $T$ has an upper-triangular matrix with diagonal entries $\lambda_1,\dots,\lambda_n$. Then $(T-\lambda_1 I) \cdot \dots \cdot (T-\lambda_n I) = 0$. 
+	\item \textbf{determination of eigenvalues from upper-triangular matrix. } Suppose $T \in L(V)$ has an upper-triangular matrix with respect to some basis of $V$. Then the eigenvalues of $T$ are precisely the entries on the diagonal of that upper-triangular matrix. 
+	\item \textbf{necessary and sufficient condition to have an upper-triangular matrix. } Suppose $V$ is finite-dim and $T \in L(V)$. Then $T$ has an upper-triangular matrix with respect to some basis of $V$ iff the minimal polynomial of $T$ equals $(z-\lambda_1) \cdot \dots \cdot (z-\lambda_n)$ for some $\lambda_i \in F$. 
+	\item \textbf{if $F = \mathbb{C}$, then every operator on $V$ has an upper-triangular matrix. } Suppose $V$ is a finite-dim complex vector space and $T \in L(V)$. Then $T$ has an upper-triangular matrix with respect to some basis of $V$. 
+	\item 5D. 
+	\item \textbf{eigenspace, $E(\lambda, T)$. } Suppose $T \in L(V)$ and $\lambda \in F$. Then the eigenspace of $T$ corresponding to $\lambda$ is $E(\lambda,T) = \nul (T - \lambda I) = \{v \in V \mid Tv = \lambda v\}$. 
+	\item \textbf{sum of eigenspaces is a direct sum. } Suppose $T \in L(V)$ and $\lambda_1,\dots,\lambda_m$ are the distinct eigenvalues of $T$. Then $\sum_i E(\lambda_i,T)$ is a direct sum and $\sum_i \dim E(\lambda_i, T) \leq \dim V$. 
+	\item \textbf{conditions equivalent to diagonalizability. } Suppose $V$ finite-dim and $T \in L(V)$. Let $\lambda_1,\dots,\lambda_m$ denote the distinct eigenvalues of $T$. Then TFAE: 
+	\begin{enumerate}
+		\item $T$ is diagonalizable. 
+		\item $V$ has a basis consisting of eigenvectors of $T$. 
+		\item $V = \oplus_i E(\lambda_i, T)$
+		\item $\dim V = \sum_i \dim E(\lambda_i,T)$. 
+	\end{enumerate}
+	\item \textbf{enough eigenvalues implies diagonalizability. } Let $V$ be finite-dim and $T \in L(V)$ has $\dim V$ distinct eigenvalues. Then $T$ is diagonalizable. 
+	\item \textbf{necessary and sufficient condition for diagonalizability. } Suppose $V$ finite-dim and $T \in L(V)$. Then $T$ diagonalizable iff the minimal polynomial of $T$ equals $(z-\lambda_1) \cdot \cdot \cdot (z-\lambda_m)$ for some distinct $\lambda_1,\dots,\lambda_i \in F$. 
+	\item \textbf{restriction of diagonalizable operator to invariant subspace. } Suppose $T \in L(V)$ and $U$ is a $T$-invariant subspace of $V$. Then $T \mid_U$ is a diagonalizable operator on $U$. 
+	\item 5E. 
+	\item \textbf{commuting operators correspond to commuting matrices. } Suppose $S,T \in L(V)$ and $v_1,\dots,v_n$ is a basis of $V$. Then $S$ and $T$ commute iff $M(S,(v_1,\dots,v_n))$ and $M(T,(v_1,\dots,v_n))$ commute. 
+	\item \textbf{eigenspace is invariant under commuting operators. } Suppose $S,T \in L(V)$ commute and $\lambda \in F$. Then $E(\lambda,S)$ is invariant under $T$. 
+	\item \textbf{simultaneous diagonalizability iff commutativity. } Two diagonalizable operators on the same vector space have diagonal matrices with respect to the same basis iff the two operators commute. 
+	\item \textbf{common eigenvector for commuting operators. } every pair of commuting operators on a finite-dim nonzero complex vector space has a common eigenvector. 
+	\item \textbf{commuting operators are simultaneously upper-triangularizable. } Suppose $V$ is a finite-dim nonzero complex vector space and $S,T$ are commuting operators on $V$. Then there is a basis of $V$ with respect to which both $S,T$ have upper-triangular matrices. 
+	\item \textbf{eigenvalues of sum and product of commuting operators. } Suppose $V$ is a finite-dim complex vector space and $S,T$ are commuting operators on $V$. Then: 
+	\begin{enumerate}
+		\item every eigenvalue of $S+T$ is an eigenvalue of $S$ plus an eigenvalue of $T$. 
+		\item every eigenvalue of $ST$ is an eigenvalue of $S$ times an eigenvalue of $T$. 
+	\end{enumerate}
+	\item 8A. 
+	\item \textbf{sequence of increasing null spaces. } Let $T \in L(V)$. Then $\{0\} = \nul T^0 \subseteq \nul T_1 \subseteq \dots \subseteq \nul T^k \subseteq \dots$. 
+	\item \textbf{equality in the sequence of null spaces. } Let $T \in L(V)$ and $m$ is a nonnegative integer such that $\nul T^m = \nul T^{m+1}$. Then $\nul T^m = \nul T^{m+1} = \dots $. 
+	\item \textbf{null spaces stop growing. } Let $T \in L(V)$. Then $\nul T^{\dim V} = \nul T^{\dim V +1} = \dots$. 
+	\item \textbf{$V$ is the direct sum of $\nul T^{\dim V}$ and $\range T^{\dim V}$. } Let $T \in L(V)$. Then $V = \nul T^{\dim V} \oplus \range T^{\dim V}$. 
+	\item \textbf{generalized eigenvector. } Let $T \in L(V)$ and $\lambda$ be an eigenvalue of $T$. A vector $v \in V$ ($v \neq 0$) is called a generalized eigenvector of $T$ corresponding to $\lambda$ if $(T - \lambda I)^k v = 0$ for some $k \in \mathbb{Z}_{>0}$. 
+	\item \textbf{a basis of generalized eigenvectors. } Let $F = \mathbb{C}$ and $T \in L(V)$. Then there is a basis of $V$ consisting of generalized eigenvectors of $T$. 
+	\item \textbf{generalized eigenvector corresponds to a unique eigenvalue. } Let $T \in L(V)$. Then each generalized eigenvector of $T$ corresponds to only one eigenvalue of $T$. 
+	\item \textbf{linearly independent generalized eigenvectors. } Let $T \in L(V)$. Then every list of generalized eigenvectors of $T$ corresponding to distinct eigenvalues of $T$ is linearly independent. 
+	\item \textbf{nilpotent operator raised to dimension of domain is 0. } Let $T \in L(V)$ be nilpotent. Then $T^{\dim V} = 0$. 
+	\item \textbf{eigenvalues of nilpotent operator. } Let $T \in L(V)$. Then: 
+	\begin{enumerate}
+		\item if $T$ is nilpotent then 0 is an eigenvalue of $T$ and $T$ has no other eigenvalues. 
+		\item if $F = \mathbb{C}$ and 0 is the only eigenvalue of $T$, then $T$ is nilpotent. 
+	\end{enumerate}
+	\item \textbf{minimal polynomial \& upper-triangular matrix of nilpotent operator. } Let $T \in L(V)$. Then TFAE: 
+	\begin{enumerate}
+		\item $T$ is nilpotent. 
+		\item minimal polynomial of $T$ is $z^m$ for some positive integer $m$. 
+		\item there is a basis of $V$ with respect to which the matrix of $T$ has the form
+		$$
+		\begin{pmatrix}
+		0 & & * \\
+		 & \ddots & \\
+		0 & & 0
+		\end{pmatrix}
+		$$. 
+	\end{enumerate}
+	\item 8B. 
+	\item \textbf{generalized eigenspace. } Suppose $T \in L(V)$ and $\lambda \in F$. The generalized eigenspace of $T$ corresponding to $\lambda$ is $G(\lambda, T) = \{v \in V \mid (T - \lambda I)^k \textrm{ for some } k \in \mathbb{Z}_{>0}\}$, which is the set of generalized eigenvectors of $T$ corresponding to $\lambda$, including the 0-vector. 
+	\item \textbf{description of generalized eigenspaces. } Suppose $T \in L(V)$ and $\lambda \in F$. Then $G(\lambda, T) = \nul(T - \lambda I)^{\dim V}$. 
+	\item \textbf{generalized eigenspace decomposition. } 
+	\item Suppose $F = \mathbb{C}$ and $T \in L(V)$. Let $\lambda_1,\dots,\lambda_m$ be the distinct eigenvalues of $T$. Then: 
+	\begin{enumerate}
+		\item $G(\lambda_k,T)$ is invariant under $T$ for each $k=1,\dots,m$. 
+		\item $(T - \lambda_k I) \mid_{G(\lambda_k, T)}$ is nilpotent for each $k=1,\dots,m$. 
+		\item $V = \oplus_i G(\lambda_i, T)$. 
+	\end{enumerate}
+	\item \textbf{multiplicity. } Let $T \in L(V)$. The multiplicity of an eigenvalue $\lambda$ of $T$ is defined to be the dimension of the corresponding generalized eigenspace $G(\lambda, T)$, so multiplicity of $\lambda$ is $\dim \nul(T - \lambda I)^{\dim V}$. 
+	\item \textbf{sum of the multiplicities equals $\dim V$. } Suppose $F=\mathbb{C}$ and $T \in L(V)$. Then the sum of all the multiplicities of all the eigenvalues of $T$ equals $\dim V$. 
+	\item \textbf{characteristic polynomial. } Let $F = \mathbb{C}$ and $T \in L(V)$. Let $\lambda_1,\dots,\lambda_m$ be the distinct eigenvalues of $T$, with multiplicities $d_1,\dots,d_m$. Then the polynomial $(z - \lambda_1)^{d_1} \cdot \cdot \cdot (z - \lambda_m)^{d_m}$ is called the characteristic polynomial of $T$. 
+	\item \textbf{degree and zeros of the characteristic polynomial. } Let $F = \mathbb{C}$ and $T \in L(V)$. Then: 
+	\begin{enumerate}
+		\item characteristic polynomial of $T$ has degree $\dim V$. 
+		\item zeros of the characterisit polynomial are the eigenvalues of $T$. 
+	\end{enumerate}
+	\item \textbf{Cayley-Hamilton theorem. } Let $F = \mathbb{C}$, $T \in L(V)$ and $q$ be the characteristic polynomial of $T$. Then $q(T) = 0$. 
+	\item \textbf{characteristic polynomial is a multiple of minimal polynomial. } Let $F = \mathbb{C}$ and $T \in L(V)$. Then characteristic polynomial of $T$ is a polynomial multiple of the minimal polynomial of $T$. 
+	\item \textbf{multiplicity of an eigenvalue equals number of times on diagonal. } Let $F = \mathbb{C}$ and $T \in L(V)$. Let $v_1,\dots,v_n$ be a basis of $V$ such that $M(T,(v_1,\dots,v_n))$ is upper-triangular. The number of times the eigenvalue $\lambda$ ppears on the diagonal of $M(T,(v_1,\dots,v_n))$ equals the multiplicity of $\lambda$ as an eigenvalue of $T$. 
+	\item \textbf{block diagonal matrix with upper-triangular blocks. } Let $F = \mathbb{C}$ and $T \in L(V)$. Let $\lambda_1,\dots,\lambda_m$ be the distinct eigenvalues of $T$ with multiplicities $d_1,\dots,d_m$. Then there is a basis of $V$ with respect to which $T$ has a block diagonal matrix of the form 
+	$$
+	\begin{pmatrix}
+	A_1 & & 0 \\
+	 & \ddots &  \\
+	0 & & A_m
+	\end{pmatrix}
+	$$, where each $A_k$ is a $d_k$-by-$d_k$ upper-triangular matrix of the form 
+	$$
+	\begin{pmatrix}
+	\lambda_k & & * \\
+	 & \ddots &  \\
+	0 & & \lambda_k
+	\end{pmatrix}
+	$$. 
+	\item 8C. 
+	\item \textbf{jordan basis. } Let $T \in L(V)$. A basis of $V$ is called a Jordan basis for $T$ if with respect to this basis $T$ has a block diagonal matrix 
+	$$
+	\begin{pmatrix}
+	A_1 & & 0 \\
+	 & \ddots & \\
+	0 & & A_p
+	\end{pmatrix}
+	$$ in which each $A_k$ is an upper-triangular matrix of the form 
+	$$
+	\begin{pmatrix}
+	\lambda_k & 1 & & 0 \\
+	 & \ddots & \ddots & \\
+	 & & \ddots & 1 \\
+	0 & & & \lambda_k
+	\end{pmatrix}
+	$$. 
+	\item \textbf{every nilpotent operator has a jordan basis. } Let $T \in L(V)$ be nilpotent. Then there is a basis for $V$ that is a Jordan basis for $T$. 
+	\item \textbf{Jordan form. } Let $F = \mathbb{C}$ and $T \in L(V)$. Then there is a basis of $V$ that is a Jordan basis. 
+	\begin{center}
+		\hrule
+	\end{center} 
+	\item RIBET DEFS MT2.
+	\item \textbf{Double Dual. } Let $V$ be a finite-dimensional vector space with dual $V'$. Then the double dual of $V$ is $(V')' = V'' = V$. Also, $\dim V = n = \dim V' = \dim V''$. 
+	\item \textbf{Eigenspace. } Let $T \in \mathscr{L}(V)$ and take $\lambda$ to be an eigenvalue of $T$. Then, $E(\lambda,T) = \{v \in V \mid Tv = \lambda v\} \neq \emptyset$ is written as $V_\lambda$ and is called the eigenspace of $\lambda$, which is a subspace of $V$. 
+	\item \textbf{Generalized Eigenvector. } Consider a minimal polynomial $(x-\lambda_1)^{e_1} \cdot \dots \cdot (x-\lambda_m)^{e_m}$ on $X$ with $(T-\lambda_1I)^{e_1}v = 0$. Then, $v$ is called a generalized eigenvector for $\lambda = \lambda_1$. 
+	\item \textbf{Characteristic polynomial. } The characteristic polynomial of $T: V \to V$ (with eigenvalues $\lambda_1,\dots,\lambda_t$) is the polynomial $\prod_{i=1}^{t} (x-\lambda_i)^{\dim X_i}$, where $V = X_1 \oplus \dots \oplus X_t$. 
+	\item \textbf{Simultaneously diagonalizable. } Operators $S$ and $T$ on $V$ are simulatenously diagonalizable if there is a basis of $V$ that consts of vectors that are eigenvectors for both $S$ and $T$ (i.e. there exists a basis $v_1,\dots,v_n$ of $V$ so that for $i$, $1 \leq i \leq n$, there are $\lambda_i$ and $\mu_i$ so that $Sv_i = \lambda_iv_i$ and $Tv_i = \mu_iv_i$). 
+	\begin{center}
+		\hrule
+	\end{center} 
+	\item RIBET THMS MT1. 
+    \item \textbf{Theorem. } The intersection of a family of subspaces of a vector space $V$ is a subspace of $V$. 
+    \item \textbf{Theorem. } Every subspace $X$ of $V$ has complement. 
+	\item \textbf{Prop. } Let $X,Y$ be subspaces of a finite-dimensional vector space $V$. Then: 
+	\begin{enumerate}
+		\item $\dim X + \dim Y = \dim V$. 
+		\item $X \cap Y = \{0\}$. 
+	\end{enumerate}
+	Then, $V=X \oplus Y$. 
+	\item \textbf{Prop. } $\dim(X \oplus Y) = \dim(X \times Y) = \dim X + \dim Y$. 
+	\begin{center}
+		\hrule
+	\end{center}
+	\item RIBET THMS MT2
+	\item \textbf{Theorem. } Every linear functional on a subspace of $V$ can be extended to $V$. 
+	\item \textbf{Note. } Annihilator is the dual of the quotient subspace. 
+	\item \textbf{Cor. } The annihilator of $U$ is $\{0\}$ iff $U = V$. The annihilator of $U$ is $V$ iff $U = \{0\}$. 
+	\item \textbf{Prop. } If $T: V \to W$ is a linear map, then the null space of $T'$ is the annihilator of the range of $T$. We have $\textrm{ann}(\textrm{range}T) = \{\psi: W \to F \mid \phi(Tv)=0 \textrm{ for all } v \in V, T'(\psi)(v)=0, T'\psi = 0, \phi \in \nul(T')\}$. 
+	\item \textbf{Cor. } If $T: V \to W$ is a linear map between finite-dimensional $F$-vector spaces, then $\dim \nul(T') = \dim \nul(T) + \dim W - \dim V$. 
+	\item \textbf{Cor. } The linear map $T$ is onto iff $T'$ is 1-1. 
+	\item \textbf{Cor. } If $T: V \to W$ is a linear map between finite-dimensional vector spaces, then $T'$ and $T$ have equal ranks. 
+	\item \textbf{Cor. } We have $\textrm{range}T = (\nul T)^0$. 
+	\item \textbf{Theorem. } Let $F$ be a finite field with $q = |F|$. Then, $a^q=a$ for all $a \in F$. 
+	\item \textbf{Theorem. } If $F$ is a finite field, then $|F|=p^n$ for some prime $p$ and integer $n \geq 1$. 
+	\item \textbf{Theorem. } Let $T: V \to V$, $V$ finite-dimensional, and let $\alpha: F[x] \to \mathscr{L}(V)$, with $f \mapsto f(T)$. Also, we have $\ker\alpha$ to be the principal ideal $(m(x))$. Then, $m(x)$ is the minimal polynomial of $T$ and has degree $\leq n^2$. 
+	\item \textbf{Cayley-Hamilton Theorem. } Let $T: V \to V$, $V$ finite-dimensional, and let $\alpha: F[x] \to \mathscr{L}(V)$, with $f \mapsto f(T)$. Also, we have $\ker\alpha$ to be the principal ideal $(m(x))$, where $m(x)$ is the minimal polynomial of $T$. Then, the characteristic polynomial is in $\ker\alpha$; that is, we can plug in the matrix for $T$ into its characteristic polynomial and we get that it is equal to the 0-matrix. 
+	\item \textbf{Lemma. } Let $f \in \mathbb{R}[x]$ be a real polynomial. If $\lambda$ is a complex root of $f$, so is $\overline{\lambda}$, which is the complex conjugate of $\lambda$. 
+	\item \textbf{Cor. } Let $\lambda_1,\dots,\lambda_t$ be distinct eigenvalues and take $E_i = E(\lambda_i,T) = \{v \in V \mid Tv = \lambda_iv\} \subseteq V$. Now, take $E_1 \times \dots \times E_t$. Then there exists a summation map $E_1 \times \dots \times E_t \xrightarrow[]{\textrm{sum}} V$ with $(v_1,\dots,v_t) \mapsto v_1 + \dots + v_t$. Then, the sum map is 1-1. 
+	\item \textbf{Cor. } Suppose $V$ is finite-dimensional. Then each operator on $V$ has at most $\dim V$ distinct eigenvalues. 
+	\item \textbf{Prop. } Suppose $T$ is an operator on an $F$-vector space $V$. If $f \in F[x]$ is a polynomial satisfied by $T$ (meaning $f(T)=0$), then every eigenvalue of $T$ on $V$ is a root of $f$. 
+	\item \textbf{Cor. } Suppose $\lambda$ is an eigenvalue of operator $T$ on a finite-dimensional $F$-vector space. Then $\lambda$ is a root of the minimal polynomial of $T$ iff $\lambda$ is an eigenvalue of $T$. 
+	\item \textbf{Theorem. } All operators on a nonzero finite-dimensional vector space over an algebraically closed field have at least one eigenvalue. 
+	\item \textbf{Prop. } Assume that $F = \mathbb{R}$ and that $f(x) := x^2 + bx + c$ is an irreducible polynomial. If $T \in \mathscr{L}(V)$ and $V$ is finite-dimensional, then the null space of $f(T)$ is even-dimensional. 
+	\item \textbf{Prop (honors version). } Let $T$ be an operator on a finite-dimensional vector space over $F$. If $p$ is an irreducible polynomial over $F$, then the dimension of the null space of $p(T)$ is a multiple of the degree of $p$. 
+	\item \textbf{Prop. } $F[x] / (p)$ (where $p$ is irreducible) is a field. 
+	\item \textbf{Formula. } $\dim_F V = [K:F] \cdot \dim_K V = \dim_F K \cdot \dim_K V$. 
+	\item \textbf{Cor. } Every operator on an odd-dimensional $\mathbb{R}$-vector space has an eigenvalue. 
+	\item \textbf{Prop. } If $T$ is an operator on a finite-dimensional $F$-vector space, then the minimal polynomial of $T$ has degree at most $\dim V$. 
+	\item \textbf{Prop. } If $T$ is upper-triangular with respect to some basis of $V$, and if the diagonal entries of an upper-triangular matrix representation of $T$ are $\lambda_1,\dots,\lambda_n$, then $(T-\lambda_1I) \cdot \dots \cdot (T-\lambda_nI)=0$. 
+	\item \textbf{Prop. } Let $V$ be a finite-dimensional vector space and $T \in \mathscr{L}(V)$ and let $\lambda_1,\dots,\lambda_m$ be the eigenvalues of $T$. Then, $V = \oplus E(\lambda_i, T)$ iff $T$ is diagonalizable. 
+	\item \textbf{Prop. } TFAE. 
+	\begin{enumerate}
+		\item $T$ is diagonalizable. 
+		\item $V$ has a basis consisting of eigenvectors. 
+		\item The direct sum $\underset{i}{\oplus} V_{\lambda_i}$ is all of $V$. 
+		\item $\dim \left(\underset{i}{\oplus} V_{\lambda_i} \right) = \dim V$. 
+	\end{enumerate}
+	\item \textbf{Prop. } If $T: V \to V$ has $\dim V$ different eigenvalues, then $T$ is diagonalizable. 
+	\item \textbf{Jordan Canonical Form. } $X$ can be written as a direct sum of Jordan blocks, where $\sum$ dim(block) = $\dim X$. 
+	\item \textbf{Lemma. } Let $X = \oplus \textrm{span}(U_iv)$ for $i \in \{0,\dots,k_1\}$. If $Z$ is a subspace of $X'$ that is $U'$-invariant, then $\ann(Z) =: Y$ is $U$-invariant. 
+	\item \textbf{Lemma. } Suppose $S$ and $T$ are commuting operators on $V$. If $\lambda$ is an eigenvalue for $T$ on $V$, then the eigenspace $E(\lambda, T)$ is $S$-invariant. 
+	\item \textbf{Theorem. } The diagonalize operatosr on the same finite-dimensional vector space are simulateneously diagonalizable iff they commute with each other. 
+	\item \textbf{Theorem. } Every pair of commuting operators on a finite-dimensional nonzero complex vector spcae has a common eigenvector. 
+	\item \textbf{Prop. } Two commuting operators on a finite-dimensional nonzero complex vector space can be simultaneously upper-triangularized. 
+	\item \textbf{Prop. } We have: 
+	\begin{enumerate}
+		\item Every eigenvalue of $S+T$ is the sum of an eigenvalue of $S$ and an eigenvalue of $T$. 
+		\item Every eigenvalue of $ST$ is the product of an eigenvalue of $S$ and an eigenvalue of $T$. 
+	\end{enumerate}
+	\begin{center}
+		\hrule
+	\end{center}
+\end{enumerate}
+
+\end{spacing}
+\end{multicols}
+
+}
+
+\end{document}
+
+
