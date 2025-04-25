@@ -56,6 +56,13 @@
 	\item \textbf{Square root of an operator. } A square root of an operator $T$ is an operator $R$ such that $R^2 = T$. 
 	\item \textbf{Isometry. } An operator $S \in L(V)$ is an isometry if it preserves distance, i.e. $||Sv|| = ||v|| \forall v \in V$, i.e. $S^* = S^{-1}$. In the real case, they are called orthogonal operators. In the complex case, they are called unitary operators. 
 	\item \textbf{Singular values. } The singular values of $T$ are the eigenvalues of $\sqrt{T^*T}$. 
+	\item \textbf{Def 1 of Determinants. } (cofactor expansion). $\det A = \sum_{j=1}^n (-1)^{j+1} \cdot a_{ij} \det (A_{ij})$. 
+	\item \textbf{Def 2 of Determinants. } If $T \in L(V)$, where $V$ is over $\mathbb{C}$, then the determinant of $T$ is the product of the eigenvalues $\lambda_1,\dots,\lambda_n$ (with multiplicity). 
+	\item \textbf{Def 3 of Determinants. } The determinant of an operator $T \in L(V)$ is $(-1)^n$ times the constant term of its characteristic polynomial $(z-\lambda_1) \cdot \cdot \cdot (z-\lambda_n)$. 
+	\item \textbf{Permutation. } A permutation $m=(m_1,\dots,m_r)$ is a list containing $1,\dots,n$ exactly once each, and write $S_n$ to denote the set of $n$-element permutations. 
+	\item \textbf{Inversion. } An inversion (in a permutation) is a pair $\{i,j\}$ such that $m_i > m_j$ where $i < j$. 
+	\item \textbf{Def 4 of Determinants. } Let $A$ be an $n \times n$ matrix. Then, $\det A = \sum_{m \in S_n} \left(\sgn(m) \cdot a_{m_1,1} \cdot \cdot \cdot a_{m_n,n}\right)$. 
+	\item \textbf{Box. } The box defined by $v_1,\dots,v_n \in \mathbb{R}^n$ is $\{a_1v_1 + \dots + a_nv_n \mid 0 \leq a_i \leq 1, i =1,\dots,n\}$ and as volume, $\det \begin{pmatrix} v_1 & \dots & v_n \end{pmatrix}$, where $v_1,\dots,v_n$ are the columns of a matrix $A$. 
 \end{enumerate}
 
 \end{document}
