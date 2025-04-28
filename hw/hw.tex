@@ -49,6 +49,26 @@
 	\item 28 | let $V$ be finitedim and $T \in L(V)$. show $T$ has at most $1 + \dim\range T$ distinct eigenvalues. | put distinct eigenvalues/vectors and for nonzero eigenvalues, look at $v_i = T((1\lambda_i)v_i)$ and linear independence and range. 
 	\item 39 | Let $V$ be finitedim and $T \in L(V)$. show $T$ has eigenvalue iff there is a subspace of $V$ of $\dim V - 1$ that is $T$-invariant. | one direction: use fact eigenvalues of $T_{V/U}$ are eigenvalues of $T$. other direction: if $\lambda$ eigenvalue, then $T-\lambda I$ noninvertible so its range has dim $< \dim V$. if $X = \range T$, every subspace $W$ of $V$ with $X \subseteq W \subseteq V$ is $T$-invariant. 
 	\item 5B. 
+	\item 2 | let $V$ be a complex vector space and $T \in L(V)$ have no eigenvalues. show every subspcae of $V$ invariant under $T$ is $\{0\}$ or infinite-dim. | Take instead a finitedim $X \subseteq V$; it has an eigenvector. 
+	\item 3 | let $n \in \mathbb{Z}_{>0}$ and $T \in L(F^n)$ by $T(x_1,\dots,x_n) = (x_1+\dots+x_n,\dots,x_1+\dots+x_n)$. find all eigenvalues/vectors and minimal polynomial of $T$ | $\range T = \{(a,\dots,a)\}$. 
+	\item 4 | let $F=C$, $T \in L(V)$, $p \in P(C)$ is a nonconstant polynomial and $\alpha \in C$. show $\alpha$ is eigenvalue of $p(T)$ iff $\alpha = p(\lambda)$ for some eigenvalue $\lambda$ of $T$ | one direction: $p(T)v = p(\lambda)v$. other direction: $T$ is upper-triangular in some basis of $V$; look at diagonal and look at $p(T)$. 
+	\item 5 | for above question, find an example where instead $V = R^2$. | $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$. 
+	\item 7 | show if $V$ finitedim and $S,T \in L(V)$, then if at least one of $S,T$ inveritible, then minimal poly of $ST$ equals that of $TS$. | first show $Sp(T)S^{-1} = p(STS^{-1})$. then $T,STS^{-1}$ have same minimal poly. replace $T$ by $TS$. 
+	\item 10 | let $V$ be finitedim and $T \in L(V)$. show $span(v,Tv,\dots,T^m v)=span(v,Tv,\dots,T^{\dim V - 1}v)$ for all $m \geq \dim V - 1$. | note $v,Tv,\dots,T^{m}v$ has dim $m$. 
+	\item 19 | let $V$ be finitedim and $T \in L(V)$. let $\epsilon = \{q(T) \mid q \in P(F)\}$. show $\dim \epsilon$ = degree of minimal poly of $T$ | observe $F[x] / (\nul \alpha)$, algebra. 
+	\item 25 | $V$ finitedim, $T \in L(V)$, $U \subseteq V$ invariant under $T$. show minimal poly of $T$ is poly multiple of minimal poly of $T_{V/U}$. also show (min poly of $T \mid_U$) x (min poly of $T_{V/U}$) is poly multiple of min poly of $T$. | first part: if $m$ is min poly of $T$, then $m(T \mid_U)$ is poly multiple of min poly of $T \mid_U$, similary for $T_{V/U}$. second part: let $g$ be min poly of $T_{V/U}$ and $f$ be min poly of $T \mid_U$ and show $(fg)(T)=0$. $g(T)$ is 0 map on $V/U$ and $f(T)$ maps $U$ to $\{0\}$. 
+	\item 5C. 
+	\item 7 | $V$ finitedim, $T \in L(V)$, and $v \in V$. show there is unique monic poly $p_v$ of smallest degree so that $p_v(T)v=0$. also show min poly of $T$ is a poly mult of $p_v$. | first part: $I = \{f(x) \mid f(T)v=0\}$, it contains 0 and closed under addition, and 'external multiplication' and use well-ordering. 
+	\item 5D. 
+	\item 2 | let $T \in L(V)$ have diagonal matrix $A$ corresponding to some basis of $V$. show that if $\lambda \in F$, then $\lambda$ appears on diag of $A$ exactly $\dim E(\lambda,T)$ times. | $E(\lambda,T) = \nul (T-\lambda I)$ and look at matrix multiplication. 
+	\item 3 | $V$ finitedim, $T \in L(V)$ diagonalizable. show $V = \nul T \oplus \range T$. | look at eigenvalues that are 0 and eigenvalues that are nonzero. 
+	\item 5 | $V$ finitedim complex vector space, $T \in L(V)$ and $V = \nul (T - \lambda I) \oplus \range (T - \lambda I)$ for all $\lambda \in C$. show $T$ diagonalizable. | do induction on $\dim V$. 
+	\item 19 | prove/disprove: if $T \in L(V)$ and $U \subseteq V$ is invariant under $T$ so that $T \mid_U$ and $T_{V/U}$ are diagonalizable, then $T$ diagonalizable. | false: take $\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$. 
+	\item 5E. 
+	\item 2 | let $\epsilon$ be subset of $V$ where every $T \in \epsilon$ is diagonalizable. show there is a basis of $V$ with respect to which every $T \in \epsilon$ has diag matrix iff every pair $S,T \in \epsilon$ commutes. | converse: look at direct sum of operators, eigenspaces, and restrictions. 
+	\item 6 | $V$ finitedim nonzero complex vector space and $ST=TS$. show there exist $\alpha,\lambda \in C$ so that $\range (S-\alpha I) + \range (T-\lambda I) \neq V$. | look at 2 upper triangular matrices, one with $\alpha$ in bottom left corner and another with $\lambda$ in bottom left corner. 
+	\item 10 | want commuting operators $S,T$ so that $S+T$ has an eigenvalue that is not sum of eigenvalue of $S$ and eigenvalue of $T$, and similarly for $ST$. | let $S = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, T = -S$. 
+	\item 6A. 
 	\item 
 \end{itemize}
 
