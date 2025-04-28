@@ -1,0 +1,50 @@
+\input{~/normal-preamble.tex}
+
+\begin{itemize}
+	\item 1C. 
+	\item 5 | Is $R^2$ a subspace of the complex vector space $C^2$? | No, check scalar mutliplication by $i$. 
+	\item 7 | prove/disprove: If $U$ is a nonempty subset of $R^2$ that is closed under addition and taking additive inverses, then $U$ is a subspace. | No, take $U = \{(x,0) \mid x \in Q\}$. 
+	\item 8 | want an example of a subset $U$ of $R^2$ that satisfies scalar mutliplication but not vector addition | take $x$-axis, $y$-axis. 
+	\item 13 | prove that union of three subspaces of $V$ is a subspace iff one contains the other two | suffices to show if $W$ is the union of three of its subspaces, then then one of the three subspaces is contained in the union of the other two, by applying result of prob 1c.12. 
+	\item 18 | does the operation of addition on subspaces of $V$ have additive identity? which subspaces have inverses? | add. id. is $\{0\}$ and only $\{0\}$ has additive inverse. 
+	\item 19 | prove/disprove: If $V_1,V_2,U$ subspaces of $V$, then $V_1 + U = V_2 + U$ implies $V_1 = V_2$ | false. take $V_1$,$V_2$,$U$ to be $x$-axis, $y$-axis, $y=x$ respectively. 
+	\item 23 | prove/disprove: If $V_1,V_2,U$ subspaces of $V$ so that $V=V_1 \oplus U = V_2 \oplus U$, then $V_1=V_2$. | use same counterexample as in problem above. 
+	\item 2A. 
+	\item 7b | Show if $C$ is a vector space over $C$, then $1+i,1-i$ is L.D. | for L.D. relation, choose coeffs $a=i$ and $b=1$ for $1+i,1-i$, resp. 
+	\item 17 | show that $V$ is inf-dim iff there is a sequence $v_1,v_2,\dots \in V$ so that $v_1,\dots,v_m$ l.i. for all positive integers $m$. | for reverse direction, prove contrapositive. 
+	\item 19 | show that real vector space of all cts real values functions on $[0,1]$ is inf-dim. | look at polynomials. 
+	\item 5 | let $V$ be finite-dim and $V=U+W$. show there is a basis of $V$ consisting of vectors from $U \cup W$. | concatenate bases of $U$ and $W$.
+	\item 2C. 
+	\item 8 | let $v_1,\dots,v_m$ be linearly independent in $V$ and $w \in V$. show $\dim span(v_1+w,\dots,v_m+w) \geq m-1$. | look at $v_1-v_2,\dots,v_1-v_m$ and it is contained in the dimspan. 
+	\item 10 | let $m$ be a positive integer. for $0 \leq k \leq m$, let $p_k = x^k(1-x)^{m-k}$. show $p_0,\dots,p_m$ is a basis of $P_m(F)$. | set linear dependence relation and choose $x$-values to substitute. 
+	\item 11 | Let $U$,$W$ be 4-dim subspaces of $C^6$. show there exist two vectors in $U \cap W$ that aren't scalar multiples of each other. | equivalent to showing $\dim (U \cap W) \geq 2$. 
+	\item 16 | let $V$ be finite-dim and $U$ a strict subspace of $V$. let $n=\dim U$ and $m=\dim V$. show there are $n-m$ subsapces of $V$ each with dim 1 whose intersectin is $U$ | fix a basis of $U$ and extend it to basis of $V$ and construct subspaces that each 'delete' a vector in the extension of $U$. 
+	\item 3A. 
+	\item 8 | give a function $\phi: R^2 \to R$ so that $\phi(\lambda v) = \lambda \phi(v)$ but $\phi$ not linear | take $\phi(x,y) = (x^3 + y^3)^{1/3}$. 
+	\item 10 | prove/disprove: if $q \in P(R)$ and $T: P(R) \to P(R)$ by $Tp = q \circ p$, then $T$ is linear | false. take $q =x^2$. 
+	\item 11 | let $V$ be finitedim and $T \in L(V)$. show $T = \lambda I$ iff $ST=TS$ for all $S \in L(V)$. | for reverse direction, try contrapositive and look at $\ker T$. 
+	\item 12 | let $U$ be a strict subspace of $V$. Let $S \in L(U,W)$ and $S \neq 0$. Let $T(v) = Sv$ if $v \in U$ and $Tv=0$ if $v \notin U$. show $T$ is not linear. | pick $v_1 \in U$ and $v_2 \notin U$. 
+	\item 17 | let $V$ be finitedim. show the only two-sided ideals of $L(V)$ are $\{0\}$ and $L(V)$. | let $w$ be so that $Tw \neq 0$. let $S_k: V \to V$ that sends $v_j$ to 0 for $j \neq k$ and $v_k$ to $w$. put $R_k$ so that $R_k(Tw) = v_k$, and look at $R_kTS_kv_j$. 
+	\item 3B. 
+	\item 15 | Suppose there is a linear map on $V$ so that both null space and range of it are finitedim. show that $V$ is finite dim. | look at basis $Tv_1,\dots,Tv_n$ for range and $w_1,\dots,w_k$ for null space. 
+	\item 19 | Let $W$ be finitedim and $T \in L(V,W)$. show $T$ is 1-1 iff there exists $S \in L(W,V)$ so that $ST=I$ on $V$. | letting $T: V \to W$ be 1-1 and looking at $U=\range T$, put $S: U \to V$ as the inverse of $T$ and extend to $S: W \to V$. 
+	\item 20 | let $W$ be finite-dim and $T \in L(V,W)$. Show $T$ onto iff there exists $S \in L(W,V)$ so that $TS=I$ on $W$. | use ontoness of $T$ and look at restriction of $T$ to $X$, the complement of $null T$. do isomorphism $X \cong W$ and put $S: W \to X$ so that $TS=I$. 
+	\item 3C. 
+	\item 5 | Let $V,W$ be finitedim and $T \in L(V,W)$. show there is a basis of $V$ and a basis of $W$ so that in these bases, all entries of $M(T)$ are 0 except those in entries row $k$ col $k$ if $1 \leq k \leq \range T$. | $U=\nul T$ and $X$ is complement to $U$ in $V$. put bases of $X$ and $U$. find bases of $\range T$ and complete to get basis of $W$. 
+	\item 6 | Let $v_1,\dots,v_n$ be basis of $V$ and $W$ is finitedim and let $T \in L(V)$. show there is a basis $w_1,\dots,w_m$ so that all entries of $M(T)$, in these bases, are 0 except possibly a 1 in the first row, first col. | first column is $Tv_1$. consider when $Tv_1 = 0, \neq 0$. put basis $W = span(Tv_1,w_2,\dots,w_m)$. 
+	\item 7 | Let $w_1,\dots,w_n$ a basis of $W$ and $V$ finitedim and $T \in L(V,W)$. Show there is a basis $v_1,\dots,v_m$ of $V$ so that all entries in first row of $M(T)$, in these bases, are 0 except possilby a 1 in first row, first col. | Look at $T': W' \to V'$ and apply 3c.6 result. 
+	\item 3D. 
+	\item 10 | Let $V,W$ be finite dim and $U \subseteq V$. put $E = \{T \in L(V,W) \mid U \subseteq \nul T\}$. find a formula for $\dim E$ in terms of $\dim V, \dim U, \dim W$. | put $\Phi: L(V,W) \to L(U,W)$ by $\phi(T) = T \mid_U$ and find range and null space. 
+	\item 19 | let $V$ be finitedim and $T \in L(V)$. show $T$ has same matrix with respect to every basis of $V$ iff $T = \lambda I$. | fix a matrix of $T$ and for basis $v_1,\dots,v_m$ of $V$, $v_1,\dots,(1/2)v_k,\dots,v_m$ is also basis; scale and edit. 
+	\item 20 | let $q \in P(R)$. show there is a polynomial $p \in P(R)$ so that $q(x) = (x^2 + x)p''(x) + 2xp'(x) + p(3)$. | define $T: P(R) \to P(R)$ by $Tp = (x^2 + x)p''(x) + 2xp'(x) + p(3)$ and show $T$ is 1-1 (and by finitedim of domain,codomain) thus $T$ is onto. 
+	\item 3E. 
+	\item 9 | Show a nonempty subset $A$ of $V$ is a translate of some subspace of $V$ iff $\lambda v + (1-\lambda)w \in A$ for all $v,w \in A$, $\lambda \in F$. | for converse, fix $x \in A$ attempt for $A = x + U$, where $U = \{a-x \mid a \in A\}$. 
+	\item 17 | Let $U$ be a subspace of $V$ so that $\dim V/U = 1$. show there is $\phi \in L(V,F)$ so that $\nul\phi = U$. | put $T: V/U \to F$ that sends everything to $1 \in F$. let $\phi$ be composite of $\pi: V \to V/U$ and $T$. 
+	\item 3F. 
+	\item 6 | let $\phi,\beta \in V'$. show $\nul\phi \subseteq \nul\beta$ iff there is $c \in F$ so that $\beta = c\phi$. | by a previous problem, there is $S \in L(F)$ so that $\beta = S\phi$. 
+	\item 26 | let $V$ be finitedim and $\Omega$ be a subspace of $V'$. show $\Omega = \{v \in V \mid \phi(v)=0 \forall \phi \in \Omega\}^0 = U^0$. | show $U = \cap_{i=1}^{m} (\nul \phi_i)$. 
+	\item 5A. 
+	\item 
+\end{itemize}
+
+\end{document}
