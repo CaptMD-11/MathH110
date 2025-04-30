@@ -409,6 +409,136 @@ MIDTERM 2.
 		\item if $e_1,\dots,e_m$ is an orthonormal basis of $V$ and $v \in V$, then $P_U v = \langle v,e_1 \rangle e_1 + \dots + \langle v,e_m \rangle e_m$. 
 	\end{enumerate}
 	\item \textbf{riesz representation theorem (again). } let $V$ be finitedim. for each $v \in V$ define $\phi_v \in V'$ so that $\phi_v (u) = \langle u,v \rangle$ for each $u \in V$. then $v \mapsto \phi_v$ is a 1-1 function $V \to V'$. 
+	\item 7A. 
+	\item \textbf{adjoint. } let $T \in L(V,W)$. the adjoint of $T$ is $T^*: W \to V$ so that $\langle Tv,w \rangle = \langle v,T^*w \rangle$ for all $v \in V, w \in W$. 
+	\item \textbf{adjoint of a linear map is a linear map. } if $T \in L(V,W)$, then $T^* \in L(W,V)$. 
+	\item \textbf{properties of adjoint. } Let $T \in L(V,W)$. 
+	\begin{enumerate}
+		\item $(S+T)^* = S^*+T^*$. 
+		\item $(\lambda T)^* = \overline{\lambda}T^*$. 
+		\item $(T^*)^*=T$. 
+		\item $(ST)^* = T^*S^*$ for all $S \in L(W,U)$, where $U$ is a finitedim inner product space. 
+		\item $I^*=I$. 
+		\item if $T$ is invertible, then $T^*$ is invertible and $(T^*)^{-1} = (T^{-1})^*$.
+	\end{enumerate}
+	\item \textbf{null space and range of $T^*$. } Let $T \in L(V,W)$. then 
+	\begin{enumerate}
+		\item $\nul T^* = (\range T)^\perp$. 
+		\item $\range T^* = (\nul T)^\perp$. 
+		\item $\nul T = (\range T^*)^\perp$. 
+		\item $\range T = (\nul T^*)^\perp$. 
+	\end{enumerate}
+	\item \textbf{matrix of $T^*$ is the conjugate transpose of $T$. } let $T \in L(V,W)$. let $e_1,\dots,e_n$ be an orthonormal basis of $V$ and $f_1,\dots,f_m$ be an orthonormal basis of $W$. then $M(T^*) = \overline{M(T)^t}$. 
+	\item \textbf{self-adjoint. } let $T \in L(V)$. $T$ is self-adjoint if $T=T^*$. 
+	\item \textbf{eigenvalues of self-adjoint operators. } every eigenvalue of a self-adjoint operator is real. 
+	\item \textbf{prop. } Suppose $V$ is a complex inner product space and $T \in L(V)$. then $\langle Tv,v \rangle = 0 \forall v \in V$ iff $T=0$. 
+	\item \textbf{prop. } suppose $V$ is a complex inner product space and $T \in L(V)$. then $T$ is self-adjoint iff $\langle Tv,v \rangle \in R \forall v \in V$. 
+	\item \textbf{prop. } let $T$ be a self-adjoint operator on $V$. then $\langle Tv,v \rangle = 0 \forall v \in V$ iff $T=0$. 
+	\item \textbf{normal. } $T \in L(V)$ is normal if $TT^* = T^*T$. 
+	\item \textbf{prop. } let $T \in L(V)$. then $T$ is normal iff $||Tv|| = ||T^*v|| \forall v \in V$. 
+	\item \textbf{range, null space, eigenvectors of a normal operator. } let $T \in L(V)$ be normal. then
+	\begin{enumerate}
+		\item $\nul T = \nul T^*$. 
+		\item $\range T = \range T^*$. 
+		\item $V = \nul T \oplus \range T$. 
+		\item $T-\lambda I$ is normal for all $\lambda in F$. 
+		\item if $v \in V$ and $\lambda \in F$, then $Tv=\lambda v$ iff $T^*v = \overline{\lambda}v$. 
+	\end{enumerate}
+	\item \textbf{orthogonal eigenvectors for normal operators. } let $T \in L(V)$ be normal. then eigenvectors of $T$ corresponding to different eigenvalues are orthogonal. 
+	\item \textbf{$T$ normal iff real/imaginary parts of $T$ commute. } let $F=C$ and $T \in L(V)$. then $T$ is normal iff there exist commuting self-adjoint operators $A,B$ so that $T=A+iB$. 
+	\item 7B. 
+	\item \textbf{inveritble quadratic expressions. } let $T \in L(V)$ be self-adjoint and $b,c \in R$ so that $b^2 < 4c$. then $T^2 + bT + cI$ is an invertible operator. 
+	\item \textbf{minimal polynomial of self-adjoint operator. } let $T \in L(V)$ self-adjoint. then the min poly of $T$ equals $(z-\lambda_1) \cdot \cdot \cdot (z-\lambda_m)$ for some $m$. 
+	\item \textbf{Real Spectral Theorem. } let $F=R$ and $T \in L(V)$. TFAE: 
+	\begin{enumerate}
+		\item $T$ is self-adjoint. 
+		\item $T$ has a diagonal matrix with respect to some orthonormal basis of $V$. 
+		\item $V$ has an orthonormal basis consisting of eigenvectors of $T$. 
+	\end{enumerate}
+	\item \textbf{Complex Spectral Theorem. } let $F=C$ and $T \in L(V)$. TFAE: 
+	\begin{enumerate}
+		\item $T$ is normal. 
+		\item $T$ has a diagonal matrix with respect to some orthonormal basis of $V$. 
+		\item $V$ has an orthonormal basis consisting of eigenvectors of $T$. 
+	\end{enumerate}
+	\item 7C. 
+	\item \textbf{positive operator. } an operator $T \in L(V)$ is called positive if it's self-adjoint and $\langle Tv,v \rangle \geq 0 \forall v \in V$. 
+	\item \textbf{square root. } an operator $R$ is called a square root of $T$ if $R^2 = T$. 
+	\item \textbf{characterizations of positive operators. } let $T \in L(V)$. TFAE: 
+	\begin{enumerate}
+		\item $T$ is a positive operator. 
+		\item $T$ is self-adjoint and all eigenvalues of $T$ are nonnegative. 
+		\item with respect to some orthonormal basis of $T$, the matrix of $T$ is diagonal with only nonnegative numbers on diagonal. 
+		\item $T$ has a positive square root. 
+		\item $T$ has a self-adjoint square root. 
+		\item $T=R^*R$ for some $R \in L(V)$. 
+	\end{enumerate}
+	\item \textbf{prop. } each positive operator on $V$ has a unique positive square root. 
+	\item \textbf{$\sqrt{T}$. } let $\sqrt{T}$ denote the unique positive square root of a positive operator $T$. 
+	\item \textbf{prop. } let $T$ be a positive operator on $V$ and $v \in V$ so that $\langle Tv,v \rangle = 0$. then $Tv =0$. 
+	\item 7D. 
+	\item \textbf{isometry. } a linear map $S \in L(V,W)$ is an isometry if $||Sv|| = ||v|| \forall v \in V$. 
+	\item \textbf{characterizations of isometries. } let $S \in L(V,W)$. let $e_1,\dots,e_n$ be an orthonormal basis of $V$ and $f_1,\dots,f_m$ be an orthonormal basis of $W$. TFAE: 
+	\begin{enumerate}
+		\item $S$ is an isometry. 
+		\item $S^*S = I$. 
+		\item $\langle Su,Sv \rangle = \langle u,v \rangle \forall u,v \in V$. 
+		\item $Se_1,\dots,Se_n$ is an orthonormal list in $W$. 
+		\item the columns of $M(S,(e_1,\dots,e_n), (f_1,\dots,f_m))$ form an orthonormal list in $F^m$ with respect to the Euclidean inner product. 
+	\end{enumerate}
+	\item \textbf{unitary operator. } An operator $S \in L(V)$ is called unitary if it is an invertible isometry. 
+	\item \textbf{characterizations of unitary operators. } let $S \in L(V)$ and $e_1,\dots,e_n$ be an orthonormal basis of $V$. TFAE: 
+	\begin{enumerate}
+		\item $S$ is a unitary operator. 
+		\item $S^*S = SS^* = I$. 
+		\item $S$ is invertible and $S^{-1} = S^*$. 
+		\item $Se_1,\dots,Se_n$ is an orthonormal basis of $V$. 
+		\item the rows of $M(S,(e_1,\dots,e_n))$ form an orthonormal basis of $F^n$ with respect to the Euclidean inner product. 
+		\item $S^*$ is a unitary operator. 
+	\end{enumerate}
+	\item \textbf{eigenvalues of unitary operators have absolute value 1. } let $\lambda$ be an eigenvalue of a unitary operator. then $|\lambda|=1$. 
+	\item \textbf{description of unitary operators on complex inner product spaces. } let $F=C$ and $S \in L(V)$. TFAE: 
+	\begin{enumerate}
+		\item $S$ is a unitary operator. 
+		\item there is an orthonormal basis of $V$ consisting of eigenvectors of $S$ whose corresponding eigenvalues all have absolute value 1. 
+	\end{enumerate}
+	\item 7E. 
+	\item \textbf{properties of $T^*T$. } Let $T \in L(V,W)$. then 
+	\begin{enumerate} 
+		\item $T^*T$ is a positive operator on $V$. 
+		\item $\nul T^*T = \nul T$. 
+		\item $\range T^*T = \range T^*$. 
+		\item $\dim\range T = \dim\range T^* = \dim\range T^*T$. 
+	\end{enumerate}
+	\item \textbf{singular values. } let $T \in L(V,W)$. the singular values of $T$ are the nonnegative square roots of eigenvalues of $T^*T$, listed in decreasing order, each included as many times as the dimension of the corresponding eigenspace of $T^*T$. 
+	\item \textbf{role of positive singular values. } let $T \in L(V,W)$. then 
+	\begin{enumerate}
+		\item $T$ is 1-1 iff 0 is not a singular value of $T$. 
+		\item number of positive singular values of $T$ equals $\dim\range T$. 
+		\item $T$ is onto iff number of positive singular values of $T$ equals $\dim W$. 
+	\end{enumerate}
+	\item \textbf{isometries characterized by having all singular values equal 1. } let $S \in L(V,W)$. then $S$ is an isometry iff all singular values of $S$ equal 1. 
+	\item \textbf{singular value decomposition. } let $T \in L(V,W)$ and positive singular values of $T$ are $s_1,\dots,s_m$. then there exist orthonormal lists $e_1,\dots,e_m \in V$ and $f_1,\dots,f_m \in W$ so that $Tv = s_1 \langle v,e_1 \rangle f_1 + \dots + s_m \langle v,e_m \rangle f_m$ for all $v \in V$. 
+	\item \textbf{matrix version of SVD. } let $A$ be a $p \times n$ matrix with $\rank A \geq 1$. then there exist a $p \times m$ matrix $B$ with orthonormal columns, an $m \times m$ matrix $D$ with positive numbers on diagonal, and an $n \times m$ matrix $C$ with orthonormal columns so that $A=BDC^*$. 
+	\item 7F. 
+	\item \textbf{upper bound for $||Tv||$. } let $T \in L(V,W)$. let $s_1$ be the largest singular value for $T$. then $||Tv|| \leq s_1||v|| \forall v \in V$.
+	\item \textbf{norm of a linear map $||\cdot||$. } let $T \in L(V,W)$. then define norm of $T$ has $||T|| = \max\{||Tv|| \mid v \in V, ||v|| \leq 1\}$. 
+	\item \textbf{basis properties of norms of linear maps. } let $T \in L(V,W)$. then 
+	\begin{enumerate}
+		\item $||T|| \geq 0$. 
+		\item $||T||=0$ iff $T=0$. 
+		\item $||\lambda T|| = |\lambda| \cdot ||T||$. 
+		\item $||S+T|| \leq ||S|| + ||T|| \forall S \in L(V,W)$. 
+	\end{enumerate}
+	\item \textbf{alternative formulas for $||T||$. } let $T \in L(V,W)$. then
+	\begin{enumerate}
+		\item $||T||$ is the largest singular value of $T$. 
+		\item $||T|| = \max\{||Tv|| \mid v \in V, ||v||=1\}$. 
+		\item $||T||$ is the smallest number $c$ so that $||Tv|| \leq c||v||$ for all $v \in V$. 
+	\end{enumerate}
+	\item \textbf{norm of adjoint. } let $T \in L(V,W)$. then $||T^*|| = ||T||$. 
+	\item \textbf{best approximation by linear map whose range has dimension $\leq k$. } let $T \in L(V,W)$ and $s_1 \geq \dots \geq s_m$ are the positive singular values of $T$. let $1 \leq k \leq m$. then $\min\{||T-S|| \mid S \in L(V,W), \dim\range S \leq k\} = s_{k+1}$. Also, if $Tv = s_1 \langle v,e_1 \rangle f_1 + \dots + s_m \langle v,e_m \rangle f_m$ is a singular value decomposition of $T$ and $T_k \in L(V,W)$ is defined by $T_kv = s_1 \langle v,e_1 \rangle f_1 + \dots + s_k \langle v,e_k \rangle f_k$ for each $v \in V$, then $\dim\range T_k = k$ and $||T-T_k|| = s_{k+1}$. 
+	\item \textbf{polar decomposition. } let $T \in L(V)$. then there exists a unitary operator $S \in L(V)$ so that $T = S\sqrt{T^*T}$. 
 	\begin{center}
 		\hrule
 	\end{center}
