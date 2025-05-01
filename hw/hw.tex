@@ -84,6 +84,13 @@
 	\item 6C. 
 	\item 9 | $V$ finitedim. let $P \in L(V)$ so that $P^2=P$ and every vector in $\nul P$ is orthogonal to every vector in $\range P$. show $\exists U \subseteq V$ so that $P=P_U$. | look at direct sums, use range, null space perp identies, put $U:= \range P$. 
 	\item 7A. 
+	\item 2 | if $T \in L(V,W)$, show $T=0 \iff T^*=0 \iff T^*T=0 \iff TT^*=0$ | show $(a) \iff (b), (a) \iff (c), (b) \iff (d)$. 
+	\item 3 | let $T \in L(V)$ and $\lambda \in F$. show $\lambda$ eigenvalue of $T$ iff $\lambda$ eigenvalue of $T^*$ | use chain of iffs and identities. 
+	\item 5 | let $T \in L(V,W)$. let $e_1,\dots,e_n$ be ON basis of $V$ and $f_1,\dots,f_m$ be ON basis of $W$. show $||Te_1||^2 + \dots + ||Te_n||^2 = ||T^*f_1||^2 + \dots + ||T^*f_m||^2$. | note $\sum ||Te_i||^2 = \sum \sum |\langle Te_i,f_j \rangle|^2$ and use inner product properties. 
+	\item 8 | let $A_{m \times n}$. Show row rank $A$ equals col rank $A$. | note $M(T^*)$ is the conjugate transpose of $M(T)$. let $v_1,\dots,v_m$ be a basis of col $M(T)$. show $\overline{v_1},\dots,\overline{v_m}$ is L.I. by applying conjugations. use also $\dim\range T = \dim\range T^*$. 
+	\item 27 | let $T \in L(V)$ be normal. show $\nul T^k = \nul T$, $\range T^k = \range T$. | first part: induction \& by normality, look at $\langle T^*T^n v, T^{n-1}v \rangle$ and inner product calculations. second part: use identities and first part. 
+	\item 29 | prove/disprove: if $T \in L(V)$, there is an ON basis $e_1,\dots,e_n$ so that $||Te_i|| = ||T^*e_i|| \forall i$. | false: take $T = \begin{pmatrix} 1 & 1 \\ -1 & 0 \end{pmatrix}$. 
+	\item 7B. 
 	\item 
 \end{itemize}
 
