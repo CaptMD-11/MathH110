@@ -69,6 +69,21 @@
 	\item 6 | $V$ finitedim nonzero complex vector space and $ST=TS$. show there exist $\alpha,\lambda \in C$ so that $\range (S-\alpha I) + \range (T-\lambda I) \neq V$. | look at 2 upper triangular matrices, one with $\alpha$ in bottom left corner and another with $\lambda$ in bottom left corner. 
 	\item 10 | want commuting operators $S,T$ so that $S+T$ has an eigenvalue that is not sum of eigenvalue of $S$ and eigenvalue of $T$, and similarly for $ST$. | let $S = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, T = -S$. 
 	\item 6A. 
+	\item 1 | prove/disprove: if $v_1,\dots,v_m \in V$ then $\sum_{j=1}^{m} \sum_{k=1}^{m} \langle v_j,v_k \rangle \geq 0$. | true, do induction and apply formula for $||v_1 + \dots + v_m||^2$. 
+	\item 4 | let $T \in L(V)$ so that $||Tv|| \leq ||v|| \forall v \in V$. show $T-\sqrt{2}I$ is injective. | do by contradiction and use triangle inequality. 
+	\item 8 | let $a,b,c,x,y \in R$ so that $a^2 + b^2 + c^2 + x^2 + y^2 \leq 1$. show $a+b+c+4x+9y \leq 10$. | vectors: $(a,b,c,x,y), (1,1,1,4,9)$ and apply cauchy-schwarz. 
+	\item 9 | let $u,v \in V$ so that $||u||=1=||v||$ and $\langle u,v \rangle =1$. show $u=v$. | use cauchy-schwarz. 
+	\item 12 | let $a,b,c,d >0$. show $(a+b+c+d)(\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d}) \geq 16$, and for which $a,b,c,d$ do we get equality? | first part: show it for the square root of the entire inequality, second part hint: equality iff scalar multiple. 
+	\item apollonius problem | take initially $a$ as left edge, $d$ as middle edge, $b$ as right edge, $c$ has bottom edge. put $y=a$ and $x=\frac{1}{2}c$, and apply parallelogram identiy. 
+	\item 6B. 
+	\item 1 | let $e_1,\dots,e_m \in V$ so that $||a_1e_1 + \dots + a_me_m||^2 = |a_1|^2 + \dots + |a_m|^2$. show $e_1,\dots,e_m$ is orthonormal | to show orthogonal, we have $||e_a||^2 \leq 1 + |a|^2 = ||e_a + ae_b||^2$. 
+	\item 3 | let $e_1,\dots,e_m$ be orthonormal in $V \ni v$. show $||v||^2 = |\langle v,e_1, \rangle|^2 + \dots + |\langle v,e_m \rangle|^2$ iff $v \in span(e_1,\dots,e_m)$. | for forward direction, set $x = \langle v,e_1 \rangle e_1 + \dots + \langle v,e_m \rangle e_m$ - look at $\langle x,v \rangle$ and $||x-v||^2$. 
+	\item 6 | let $e_1,\dots,e_n$ be an ON basis of $V$. (1) show if $v_1,\dots,v_n \in V$ so that $||e_i - v_i || \leq \frac{1}{\sqrt{n}}$, then the list of $v_i's$ is a basis of $V$. (2) show there are $v_1,\dots,v_n \in V$ so that $||e_i - v_i|| \leq \frac{1}{\sqrt{n}}$ but $v_i$'s are L.D. | (1): show linear independence and observe $|a_1|^2 + \dots + |a_n|^2 = ||a_1e_1 + \dots + a_ne_n||^2 = ||(a_1e_1 + \dots + a_ne_n) - (a_1v_1 + \dots + a_nv_n)||^2$, apply triangle, C-S inequalities. (2): put $v_i := e_i - \frac{1}{n}(e_1 + \dots + e_n)$. 
+	\item 9 | let $e_1,\dots,e_m$ be the result of applying GPS to L.I. list $v_1,\dots,v_n \in V$. show $\langle v_k,e_k \rangle > 0 \forall k$. | for case when $v_1,\dots,v_n$ not orthogonal, show contrapositive and note $||v_a||^2 = |\langle v,e_1 \rangle|^2 + \dots + |\langle v_a,e_m \rangle|^2$. 
+	\item 17 | let $F=C$ and $V$ finitedim. show if $T$ is an operator on $V$ so that 1 is only eigenvalue of $T$ and $||Tv|| \leq ||v|| \forall v \in V$, then $T=I$. | use schur's theorem; then diagonal entries are all 1. then write $Te_k$ as a linear combo of the $e_i$'s via matrix entries, upper bound coefficients to 0, so coefficients are 0, so $T=I$. 
+	\item 6C. 
+	\item 9 | $V$ finitedim. let $P \in L(V)$ so that $P^2=P$ and every vector in $\nul P$ is orthogonal to every vector in $\range P$. show $\exists U \subseteq V$ so that $P=P_U$. | look at direct sums, use range, null space perp identies, put $U:= \range P$. 
+	\item 7A. 
 	\item 
 \end{itemize}
 
