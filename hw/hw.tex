@@ -91,6 +91,16 @@
 	\item 27 | let $T \in L(V)$ be normal. show $\nul T^k = \nul T$, $\range T^k = \range T$. | first part: induction \& by normality, look at $\langle T^*T^n v, T^{n-1}v \rangle$ and inner product calculations. second part: use identities and first part. 
 	\item 29 | prove/disprove: if $T \in L(V)$, there is an ON basis $e_1,\dots,e_n$ so that $||Te_i|| = ||T^*e_i|| \forall i$. | false: take $T = \begin{pmatrix} 1 & 1 \\ -1 & 0 \end{pmatrix}$. 
 	\item 7B. 
+	\item 5 | prove/disprove: if $T \in L(C^3)$ is diagonalizable, then $T$ normal | false: take $v_1 = (1,0,0), v_2 = (0,1,0), v_3 = (1,0,1)$ and put $Tv_1 = v_1, Tv_2 = v_2, Tv_3 = 3v_3$. 
+	\item 6 | $V$ complex inner product space and $T \in L(V)$ normal and $T^9=T^8$. show $T$ self-adjoint and $T^2=T$. | look at orthonormal basis of $V$ of eigenvectors and see eigenvalues in $\{0,1\}$. then by prev problem, $T=P_U$ for some $U \subseteq V$. 
+	\item 8 | $F=C$, $T \in L(V)$, show $T$ normal iff each eigenvector of $T$ is eigenvector of $T^*$. | reverse direction: by class, $\exists$ ON basis of $V$ where $T$ is upper-triangular, observe matrices, apply complex spectral theorem. 
+	\item 18 | $V$ inner product space. want $T \in L(V)$ so that $T^2 + bT + cI$ noninvertible with $b^2 < 4c$. | take $T = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$. 
+	\item 7C. 
+	\item 5 | let $T \in L(V)$ self-adjoint. show $T$ positive iff for every ON basis $e_1,\dots,e_n$ of $V$, all entries on diagonal of $M(T,(e_1,\dots,e_n))$ are nonnegative. | forward: use thm 'writing a vector as a linear combo of ON basis' reverse: spectral theorem and equivalent statement to $T$ positive. 
+	\item 7 | $S \in L(V)$ invertible \& positive and $T \in L(V)$ positive. show $S+T$ invertible | first show $X$ positive \& invertible $\iff$ $\rangle Xv,v \rangle \forall v \in V \setminus \{0\}$, then apply. 
+	\item 15 | $T \in L(V)$ self-adjoint. show $\exists A,B \in L(V)$ so that $T=A-B, \sqrt{T^*T} = A+B, AB=BA=0$. | spectral theorem, and only real eigenvalues $\lambda_1,\dots,\lambda_n$. put $\alpha_i = \lambda_i$ if $\lambda_i \geq 0$, else, 0. put $\beta_i = -\lambda_i$ if $\lambda_i \leq 0$, else, 0. put $Ae_k = \alpha_ke_k$, $B$ similarly. 
+	\item 18 | $S,T \in L(V)$, both positive. show $ST$ positive $\iff$ $ST=TS$. | forward: prf by contradiction gives $ST \neq (ST)^*$, so $ST$ not self-adjoint, contradiction reverse: there is ON basis $e_1,\dots,e_n$ of eigenvectors of $S,T$, so $Se_i = \mu_ie_i$, $Te_i = \lambda_ie_i$ with $\lambda_i,\mu_i \geq 0 \forall i$. 
+	\item 7D. 
 	\item 
 \end{itemize}
 
