@@ -101,7 +101,10 @@
 	\item 15 | $T \in L(V)$ self-adjoint. show $\exists A,B \in L(V)$ so that $T=A-B, \sqrt{T^*T} = A+B, AB=BA=0$. | spectral theorem, and only real eigenvalues $\lambda_1,\dots,\lambda_n$. put $\alpha_i = \lambda_i$ if $\lambda_i \geq 0$, else, 0. put $\beta_i = -\lambda_i$ if $\lambda_i \leq 0$, else, 0. put $Ae_k = \alpha_ke_k$, $B$ similarly. 
 	\item 18 | $S,T \in L(V)$, both positive. show $ST$ positive $\iff$ $ST=TS$. | forward: prf by contradiction gives $ST \neq (ST)^*$, so $ST$ not self-adjoint, contradiction reverse: there is ON basis $e_1,\dots,e_n$ of eigenvectors of $S,T$, so $Se_i = \mu_ie_i$, $Te_i = \lambda_ie_i$ with $\lambda_i,\mu_i \geq 0 \forall i$. 
 	\item 7D. 
-	\item 
+	\item 1 | $\dim V \geq 2$ and $S \in L(V,W)$. show $S$ isometry iff $Se_1,Se_2$ ON list in $W$ for all ON list $e_1,e_2$ in $V$. | forward: put $U := span(e_1,e_2)$ and look $S \mid_U$ \& apply equivalence thm from axler. reverse: fix ON basis of $V$ and look at equivalence thm from axler. 
+	\item 2 | $T \in L(V,W)$. show $T = \lambda I$ iff $T$ preserves orthogonality. | reverse: fix ON basis of $V$, look at $\langle u+v,u-v \rangle = ||u||^2 - ||v||^2$ and apply to pairs in ON basis, put $\lambda := ||Te_i||$ \& do cases, $\lambda=0,\neq 0$. 
+	\item 4 | $F=C$ and $A,B$ self-adjoint. show $A+iB$ unitary iff $AB=BA$, $A^2 + B^2 = I$. | forward: look at $||(A+ib)v||^2$ and $SS^*=I$ and inner products. 
+	\item 5 | $S \in L(V)$. show TFAE: (1) $S$ self-adjoint \& unitary; (2) $S=2P-I$ for some orthogonal proj $P$; (3) $\exists U \subseteq V$ so that $Su=u \forall u \in U, Sv=-v \forall v \in U^\perp$. | $(a) \implies (b)$: put $P=(1/2)(S+I)$. $(c) \implies (a)$: show $S^2 = S$. 
 \end{itemize}
 
 \end{document}
