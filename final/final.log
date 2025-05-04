@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.31)  30 APR 2025 12:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.31)  4 MAY 2025 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1346,31 +1346,31 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \c@conjecture=\count388
 \c@customDef=\count389
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
-5.
+8.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (./final.aux)
 \openout1 = `final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1380,15 +1380,15 @@ LaTeX Font Info:    ... okay on input line 55.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(14.22636pt, 585.84227pt, 14.22636pt)
-* v-part:(T,H,B)=(14.22636pt, 766.51726pt, 14.22636pt)
+* h-part:(L,W,R)=(1.42271pt, 611.44957pt, 1.42271pt)
+* v-part:(T,H,B)=(1.42271pt, 790.98663pt, 2.56064pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=585.84227pt
-* \textheight=766.51726pt
-* \oddsidemargin=-58.04362pt
-* \evensidemargin=-58.04362pt
-* \topmargin=-95.04362pt
+* \textwidth=611.44957pt
+* \textheight=790.98663pt
+* \oddsidemargin=-70.84727pt
+* \evensidemargin=-70.84727pt
+* \topmargin=-107.84727pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -1428,65 +1428,1068 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 55.
+Package hyperref Info: Link coloring OFF on input line 58.
 
 (./final.out) (./final.out)
 \@outlinefile=\write5
 \openout5 = `final.out'.
 
 )
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 7.
 
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 	\\ A
+         XLER
+? 
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 4.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 7.
+ 4.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 7.
+ 4.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 7.
+ 4.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
 
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 3--9
+\OT1/ptm/m/n/6 ma-tri-ces $\U/rsfs/m/n/6 M\OT1/ztmcm/m/n/6 (\OML/ztmcm/m/it/6 I
+\OT1/ztmcm/m/n/6 ; \OML/ztmcm/m/it/6 u[]; [] ; u[]\OT1/ztmcm/m/n/6 ; \OML/ztmcm
+/m/it/6 v[]; [] ; v[]\OT1/ztmcm/m/n/6 )$ \OT1/ptm/m/n/6 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--9
+\OT1/ptm/m/n/6 and $\OML/ztmcm/m/it/6 B \OT1/ztmcm/m/n/6 = \U/rsfs/m/n/6 M\OT1/
+ztmcm/m/n/6 (\OML/ztmcm/m/it/6 T\OT1/ztmcm/m/n/6 ; \OML/ztmcm/m/it/6 v[]; [] ; 
+v[]\OT1/ztmcm/m/n/6 )$ \OT1/ptm/m/n/6 and
+ []
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 3--9
+\OML/ztmcm/m/it/6 C \OT1/ztmcm/m/n/6 = \U/rsfs/m/n/6 M\OT1/ztmcm/m/n/6 (\OML/zt
+mcm/m/it/6 I\OT1/ztmcm/m/n/6 ; \OML/ztmcm/m/it/6 u[]; [] ; u[]\OT1/ztmcm/m/n/6 
+; \OML/ztmcm/m/it/6 v[]; [] ; v[]\OT1/ztmcm/m/n/6 )$\OT1/ptm/m/n/6 . Then,
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 3--9
+\OT1/ptm/b/n/6 eigenvalues are the ze-ros of min-i-mal
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 		\\ z
+          eros of the minimal polynomial of $T$ are the eigenvalues of $T$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 	\end{enumerate}
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 	\\ \textbf
+                {$q(T)=0$ iff $q$ is a polynomial multiple of the minimal po...
+
+? 
+
+Underfull \hbox (badness 5519) in paragraph at lines 12--19
+\OT1/ptm/b/n/6 conditions for upper-triangular ma-trix.
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 		\\ t
+           he matrix of $T$ with respect to $v_1,\dots,v_n$ is upper-triangu...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 	\end{enumerate}
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 	\\ \textbf
+                {equation satisfied by operator with upper-triangular matrix...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 		\\ $
+           T$ is diagonalizable.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 	\end{enumerate}
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 	\\ \textbf
+                {enough eigenvalues implies diagonalizability. } Let $V$ be ...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 		\\ e
+           very eigenvalue of $S+T$ is an eigenvalue of $S$ plus an eigenval...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 	\end{enumerate}
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 	\\ \textbf
+                {$V$ is the direct sum of $\nul T^{\dim V}$ and $\range T^{\...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 		\\ i
+           f $T$ is nilpotent then 0 is an eigenvalue of $T$ and $T$ has no ...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 	\end{enumerate}
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 	\\ \textbf
+                {minimal polynomial \& upper-triangular matrix of nilpotent ...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 		\\ $
+           T$ is nilpotent.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 	\end{enumerate}
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 	\\ \textbf
+                {generalized eigenspace. } Suppose $T \in L(V)$ and $\lambda...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--65
+\OT1/ptm/b/n/6 description of gen-er-al-ized eigenspaces.
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 		\\ $
+           G(\lambda_k,T)$ is invariant under $T$ for each $k=1,\dots,m$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 	\end{enumerate}
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 	\\ \textbf
+                {multiplicity. } Let $T \in L(V)$. The multiplicity of an ei...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 		\\ c
+           haracteristic polynomial of $T$ has degree $\dim V$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 	\end{enumerate}
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 	\\ \textbf
+                {Cayley-Hamilton theorem. } Let $F = \mathbb{C}$, $T \in L(V...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
+\OT1/ptm/b/n/6 block di-ag-o-nal ma-trix with upper-
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 		\\ p
+            ositivity: $\langle v,v \rangle \geq 0 \forall v \in V$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 	\\ \textbf
+                 {pythagorean theorem. } if $u,v \in V$ with $u,v$ orthogona...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 		\\ $
+            v = \langle v,e_1 \rangle e_1 + \dots + \langle v,e_m \rangle e_m$.
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.132 	\end{enumerate}
+                      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--132
+\OMS/ztmcm/m/n/6 jj\OML/ztmcm/m/it/6 v\OMS/ztmcm/m/n/6 jj[] \OT1/ztmcm/m/n/6 = 
+\OMS/ztmcm/m/n/6 jh\OML/ztmcm/m/it/6 v; e[]\OMS/ztmcm/m/n/6 ij[] \OT1/ztmcm/m/n
+/6 + [] +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--132
+\OMS/ztmcm/m/n/6 h\OML/ztmcm/m/it/6 u; v\OMS/ztmcm/m/n/6 i \OT1/ztmcm/m/n/6 = \
+OMS/ztmcm/m/n/6 h\OML/ztmcm/m/it/6 u; e[]\OMS/ztmcm/m/n/6 i[] \OT1/ztmcm/m/n/6 
++ [] +
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 	\\ \textbf
+                 {upper-triangular matrix with respect to some orthonormal b...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 		\\ $
+            (S+T)^* = S^*+T^*$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 	\\ \textbf
+                 {null space and range of $T^*$. } Let $T \in L(V,W)$. then
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 		\\ $
+            \nul T^* = (\range T)^\perp$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 	\\ \textbf
+                 {eigenvalues of self-adjoint operators. } every eigenvalue ...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160 		\\ $
+            \nul T = \nul T^*$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 	\\ \textbf
+                 {$T$ normal iff real/imaginary parts of $T$ commute. } let ...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 		\\ $
+            T$ is self-adjoint.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.173 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 	\\ \textbf
+                 {Complex Spectral Theorem. } let $F=C$ and $T \in L(V)$. TFAE:
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176 		\\ $
+            T$ is normal.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 	\\ \textbf
+                 {positive operator. } an operator $T \in L(V)$ is called po...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 		\\ $
+            T$ is a positive operator.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 	\\ \textbf
+                 {isometry. } a linear map $S \in L(V,W)$ is an isometry if ...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 		\\ $
+            S$ is an isometry.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 	\end{enumerate}
+                      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
+\OT1/ptm/m/n/6 the columns of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
+\OML/ztmcm/m/it/6 M\OT1/ztmcm/m/n/6 (\OML/ztmcm/m/it/6 S; \OT1/ztmcm/m/n/6 (\OM
+L/ztmcm/m/it/6 e[]; [] ; e[]\OT1/ztmcm/m/n/6 )\OML/ztmcm/m/it/6 ; \OT1/ztmcm/m/
+n/6 (\OML/ztmcm/m/it/6 f[]; [] ; f[]\OT1/ztmcm/m/n/6 ))$
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 	\\ \textbf
+                 {unitary operator. } An operator $S \in L(V)$ is called uni...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202 		\\ $
+            S$ is a unitary operator.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 	\end{enumerate}
+                      
+? 
+
+Underfull \hbox (badness 5533) in paragraph at lines 202--208
+\OT1/ptm/m/n/6 the rows of $\OML/ztmcm/m/it/6 M\OT1/ztmcm/m/n/6 (\OML/ztmcm/m/i
+t/6 S; \OT1/ztmcm/m/n/6 (\OML/ztmcm/m/it/6 e[]; [] ; e[]\OT1/ztmcm/m/n/6 ))$
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 	\\ \textbf
+                 {description of unitary operators on complex inner product ...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 		\\ $
+            S$ is a unitary operator.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.214 	\\ \textbf
+                 {properties of $T^*T$. } Let $T \in L(V,W)$. then
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.216 		\\ $
+            T^*T$ is a positive operator on $V$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 	\end{enumerate}
+                      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--220
+[] [] \OML/ztmcm/m/it/6 T \OT1/ztmcm/m/n/6 = [] [] \OML/ztmcm/m/it/6 T[] \OT1/z
+tmcm/m/n/6 =
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 	\\ \textbf
+                 {singular values. } let $T \in L(V,W)$. the singular values...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 		\\ $
+            T$ is 1-1 iff 0 is not a singular value of $T$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 	\\ \textbf
+                 {isometries characterized by having all singular values equ...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.235 		\\ $
+            ||T||$ is the largest singular value of $T$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 	\\ \textbf
+                 {norm of adjoint. } let $T \in L(V,W)$. then $||T^*|| = ||T...
+
+? 
+
+Underfull \hbox (badness 6412) in paragraph at lines 239--276
+\OT1/ptm/b/n/6 Def 4 of De-ter-mi-nants.  \OT1/ptm/m/n/6 Let $\OML/ztmcm/m/it/6
+ A$
+ []
+
+
+Underfull \hbox (badness 6364) in paragraph at lines 239--276
+\OT1/ptm/m/n/6 be an $\OML/ztmcm/m/it/6 n \OMS/ztmcm/m/n/6 ^^B \OML/ztmcm/m/it/
+6 n$ \OT1/ptm/m/n/6 ma-trix. Then, $[] \OML/ztmcm/m/it/6 A \OT1/ztmcm/m/n/6 =
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.276 		\\ $
+            T$ is diagonalizable.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.280 	\end{enumerate}
+                      
+? 
+[1
 
 
 Non-PDF special ignored!
 <special> header=tree-dvips91.pro
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] [4] [5]
-(./final.aux)
+al/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.281 	\\ \textbf
+                 {Prop. } If $T: V \to V$ has $\dim V$ different eigenvalues...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 		\\ $
+            T^*T$ is a positive operator.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.321 	\end{enumerate}
+                      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.322 	\\ \textbf
+                 {Properties. } Let $A,B$ be $n \times n$ matrices. Then
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.324 		\\ $
+            \det(AB) = \det A \cdot \det B$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 	\end{enumerate}
+                      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--328
+\OT1/ptm/m/n/6 If $\OML/ztmcm/m/it/6 m \OMS/ztmcm/m/n/6 2 \OML/ztmcm/m/it/6 S[]
+$\OT1/ptm/m/n/6 , then
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--328
+[] [] \OT1/ztmcm/m/n/6 =
+ []
+
+
+Overfull \hbox (18.16904pt too wide) in paragraph at lines 324--328
+[] [] \OT1/ztmcm/m/n/6 =
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.329 	\\ \textbf
+                 {Prop. } Let $S: V \to W$ be a linear map between inner pro...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+\OT1/ptm/m/n/6 most $\OT1/ztmcm/m/n/6 1 + [] [] \OML/ztmcm/m/it/6 T$ \OT1/ptm/m
+/n/6 dis-tinct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+\OT1/ptm/m/n/6 eigen-val-ues/vectors and for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+\OT1/ptm/m/n/6 nonzero eigen-val-ues, look at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+\OML/ztmcm/m/it/6 v[] \OT1/ztmcm/m/n/6 = \OML/ztmcm/m/it/6 T\OT1/ztmcm/m/n/6 ((
+1\OML/ztmcm/m/it/6 ^^U[]\OT1/ztmcm/m/n/6 )\OML/ztmcm/m/it/6 v[]\OT1/ztmcm/m/n/6
+ )$ \OT1/ptm/m/n/6 and lin-ear
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+[]\OT1/ptm/m/n/6 10 | let $\OML/ztmcm/m/it/6 V$ \OT1/ptm/m/n/6 be finite-
+ []
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 365--366
+\OT1/ptm/m/n/6 dim and $\OML/ztmcm/m/it/6 T \OMS/ztmcm/m/n/6 2 \OML/ztmcm/m/it/
+6 L\OT1/ztmcm/m/n/6 (\OML/ztmcm/m/it/6 V\OT1/ztmcm/m/n/6 )$\OT1/ptm/m/n/6 . sho
+w
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+\OML/ztmcm/m/it/6 span\OT1/ztmcm/m/n/6 (\OML/ztmcm/m/it/6 v; Tv; [] ; T[]v\OT1/
+ztmcm/m/n/6 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+\OML/ztmcm/m/it/6 span\OT1/ztmcm/m/n/6 (\OML/ztmcm/m/it/6 v; Tv; [] ; T[]v\OT1/
+ztmcm/m/n/6 )$
+ []
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.378 .... | let $S = \begin{pmatrix} 0 & -1 \item
+                                                   1 & 0 \end{pmatrix}, T = ...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.378 ...| let $S = \begin{pmatrix} 0 & -1 \item 1
+                                                   & 0 \end{pmatrix}, T = -S$.
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.378 ...| let $S = \begin{pmatrix} 0 & -1 \item 1
+                                                   & 0 \end{pmatrix}, T = -S$.
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+[]\OT1/ptm/m/n/6 1 | prove/disprove:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+\OT1/ptm/m/n/6 if $\OML/ztmcm/m/it/6 v[]; [] ; v[] \OMS/ztmcm/m/n/6 2 \OML/ztmc
+m/m/it/6 V$ \OT1/ptm/m/n/6 then
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+[][] [][]\OMS/ztmcm/m/n/6 h\OML/ztmcm/m/it/6 v[]; v[]\OMS/ztmcm/m/n/6 i ^^U \OT
+1/ztmcm/m/n/6 0$\OT1/ptm/m/n/6 . |
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+[]\OT1/ptm/m/n/6 29 | prove/disprove: if
+ []
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 390--391
+\OML/ztmcm/m/it/6 T \OMS/ztmcm/m/n/6 2 \OML/ztmcm/m/it/6 L\OT1/ztmcm/m/n/6 (\OM
+L/ztmcm/m/it/6 V\OT1/ztmcm/m/n/6 )$\OT1/ptm/m/n/6 , there is an ON
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+\OT1/ptm/m/n/6 ba-sis $\OML/ztmcm/m/it/6 e[]; [] ; e[]$ \OT1/ptm/m/n/6 so that
+ []
+
+[2] (./final.aux)
 Package rerunfilecheck Info: File `final.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 38144 strings out of 476025
- 853222 string characters out of 5790017
- 1966388 words of memory out of 5000000
- 57407 multiletter control sequences out of 15000+600000
+ 37750 strings out of 476025
+ 850067 string characters out of 5790017
+ 2023388 words of memory out of 5000000
+ 57413 multiletter control sequences out of 15000+600000
  530543 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,12n,123p,1647b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 124i,12n,123p,1647b,743s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -1498,10 +2501,10 @@ cal/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive
 -dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on final.pdf (5 pages, 170799 bytes).
+Output written on final.pdf (2 pages, 161734 bytes).
 PDF statistics:
- 668 PDF objects out of 1000 (max. 8388607)
- 632 compressed objects within 7 object streams
- 482 named destinations out of 1000 (max. 500000)
+ 173 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
+ 82 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
