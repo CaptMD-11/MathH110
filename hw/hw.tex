@@ -105,6 +105,13 @@
 	\item 2 | $T \in L(V,W)$. show $T = \lambda I$ iff $T$ preserves orthogonality. | reverse: fix ON basis of $V$, look at $\langle u+v,u-v \rangle = ||u||^2 - ||v||^2$ and apply to pairs in ON basis, put $\lambda := ||Te_i||$ \& do cases, $\lambda=0,\neq 0$. 
 	\item 4 | $F=C$ and $A,B$ self-adjoint. show $A+iB$ unitary iff $AB=BA$, $A^2 + B^2 = I$. | forward: look at $||(A+ib)v||^2$ and $SS^*=I$ and inner products. 
 	\item 5 | $S \in L(V)$. show TFAE: (1) $S$ self-adjoint \& unitary; (2) $S=2P-I$ for some orthogonal proj $P$; (3) $\exists U \subseteq V$ so that $Su=u \forall u \in U, Sv=-v \forall v \in U^\perp$. | $(a) \implies (b)$: put $P=(1/2)(S+I)$. $(c) \implies (a)$: show $S^2 = S$. 
+	\item 7E. 
+	\item 2 | let $T \in L(V,W)$ and $s>0$. show $s$ is singular value of $T$ iff $\exists$ nonzero $v \in V, w \in W$ so that $Tv=w, T^*w=v$. | forward; $e_1,\dots,e_m$ and $f_1,\dots,f_m$ ON lists of $V,W$ so that $Te_k = s_kf_k$, $T^*f_k = s_ke_k$. 
+	\item 3 | give example of $T \in L(C^3)$ so that 0 is only eigenvalue of $T$ and singular values of $T$ are $0,5$. | Take $T = \begin{pmatrix} 0 & 5 \\ 0 & 0 \end{pmatrix}$. 
+	\item 4 | $T \in L(V,W)$, $s_1$ is largest singular value of $T$, $s_n$ is smallest. show $[s_n,s_1] = \{||Tv|| \mid v \in V, ||v||=1\}$. | by cases. for case $s_1>s_n$, use bessel's inequality. 
+	\item 9 | $T \in L(V,W)$. show $T,T^*$ have same positive eigenvalues | get ON lists $f_1,\dots,f_m \in W$, $e_1,\dots,e_m \in V$ by SVD and get $T^*w = s_1 \langle w,f_1 \rangle e_1 + \dots + s_m \langle w,f_m \rangle e_m$. 
+	\item 11 | $T \in L(V,W)$, $v_1,\dots,v_n$ ON basis of $V$. put $s_1,\dots,s_n$ singular values of $T$. (1): show $||Tv_1||^2 + \dots + ||Tv_n||^2 = s_1^2 + \dots + s_n^2$. (2): if $W=V$ and $T$ positive, show $\langle Tv_1,v_1 \rangle + \dots + \langle Tv_n,v_n \rangle$. | (1): look at ON basis of $V$, and of $W$ and $Te_k = s_kf_k$. (2): $\sum_{i=1}^{n} \langle Tv_i,v_i \rangle = \sum_{i=1}^{n} ||\sqrt{T}v_i||^2 = s_1 + \dots + s_n$. 
+	\item 15 | $T \in L(V)$ and $s_1 \geq \dots \geq s_n$ singuluar values. show if $\lambda$ eigenvalue of $T$, then $s_1 \geq |\lambda| \geq s_n$. | take $v \in V$ so $Tv = \lambda v, ||v||=1$, apply prev. problem result to get $|\lambda| = ||\lambda v|| = ||Tv|| \in [s_n,s_1]$. 
 \end{itemize}
 
 \end{document}
